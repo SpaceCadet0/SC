@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+@import url('https://fonts.googleapis.com/css?family=Bender');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    left: 0px;
+    top: 0px;
+
+    background: #F1F1F1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+/* logo */
+.logo_header {
+    position: absolute;
+    margin: 15px 0px 0px 120px;
+    width: 80px;
+    height: 75px;
+    /* left: 10%; */
+
+}
+
+.logo_footer {
+    position: absolute;
+    top: 3400px;
+    width: 80px;
+    height: 75px;
+
+
+}
+
+nav {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.navfooter {
+    position: absolute;
+    top: 3455px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu li {
+    float: left;
+    padding: 25px;
+    display: block;
+    /* position: absolute
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); */
+}
+
+.menu a {
+
+    font-family: Montserrat;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    color: #32343C;
+    /* margin-right: 30px; */
+}
+
+.menu a:hover {
+    color: #7BBE4D
+        /* border-bottom: 2px solid #7BBE4D; */
+}
+
+.menu {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.menu2 li {
+    float: left;
+    padding: 25px;
+    display: block;
+    /* position: absolute
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); */
+}
+
+.menu2 a:hover {
+    color: #7BBE4D
+        /* border-bottom: 2px solid #7BBE4D; */
+}
+
+.menu2 a {
+
+    font-family: Montserrat;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    color: #f1f1f1;
+    /* margin-right: 30px; */
+}
+
+.menu2 {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.phone1 {
+    /* position: absolute;
+    left: 74.04%;
+    right: 14.85%;
+    top: 30%; */
+
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+
+    color: #32343C;
+}
+
+.phone2 {
+    /* position: absolute;
+    left: 74.04%;
+    right: 14.85%;
+    top: 30%; */
+
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+
+    color: #F1F1F1;
+}
+
+.lk1 {
+    /* position: absolute;
+    left: 75.69%;
+    right: 14.93%;
+    top: 55%; */
+
+    font-family: Montserrat;
+    font-size: 15px;
+    text-align: center;
+
+    color: #32343C;
+}
+
+.lk2 {
+    /* position: absolute;
+    left: 75.69%;
+    right: 14.93%;
+    top: 55%; */
+
+    font-family: Montserrat;
+    font-size: 15px;
+    text-align: center;
+
+    color: #f1f1f1;
+}
+
+h1 {
+    font-family: Vollkorn;
+    font-size: 36px;
+    color: #32343C;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 13px;
+
+    color: #32343C;
+}
+
+.h1ban {
+    position: absolute;
+    margin: 250px 0px 0px 120px;
+    /* top: 9px; */
+}
+
+.pban {
+    position: absolute;
+    margin: 300px 0px 0px 120px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    color: #32343C;
+}
+
+button:hover {
+    background: #858585;
+}
+
+.button1 {
+    position: absolute;
+    margin: 350px 0px 0px 120px;
+    height: 60px;
+    width: 200px;
+    background: #7BBE4D;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.button2 {
+    position: absolute;
+    top: 3200px;
+    height: 60px;
+    width: 200px;
+    background: #7BBE4D;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.h1_about {
+    position: absolute;
+    width: 300px;
+    height: 51px;
+    margin: 350px 120px 0px 0px;
+    font-family: Vollkorn;
+    font-size: 36px;
+    color: #32343C;
+}
+
+.p_about {
+    position: absolute;
+    width: 430px;
+    height: 264px;
+    /* left: 60%; */
+    top: 1112px;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #32343c;
+}
+
+/* ТАБЛИЦА  */
+table {
+    background: #f9f9f9;
+    width: 920px;
+    height: 145px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 1319px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+th {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    color: #32343C;
+}
+
+td {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #32343C;
+}
+
+.advant {
+    height: 1273px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.h1partners {
+    position: absolute;
+    padding-top: 270px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.h1advant {
+    position: absolute;
+    padding-top: 300px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.h1feedback {
+    position: absolute;
+    padding-top: 300px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.logo_partners {
+    padding-left: 200px;
+    padding-top: 220px;
+}
+
+.h1contract {
+    position: absolute;
+    padding-top: 200px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.pcontract {
+    position: absolute;
+    top: 3068px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 20px;
+
+    color: #32343C;
+
+}
+
+footer {
+    height: 150px;
+    background-color: #32343C;
+    ;
+}
+
+.photoblock {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rect1 {
+    position: absolute;
+    width: 1140px;
+    height: 10px;
+    /* left: 150px;
+    top: 798px; */
+    background: linear-gradient(90deg, #7BBE4D 0%, #CCE4BC 100%);
+}
+
+.rect2 {
+    position: absolute;
+    width: 1140px;
+    height: 10px;
+    background: linear-gradient(90deg, #7BBE4D 0%, #CCE4BC 100%);
+    transform: rotate(-180deg);
+}
