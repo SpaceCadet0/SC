@@ -1,0 +1,454 @@
+@media only screen and (max-width : 1199px) {
+	.s_company .text{
+		padding-left: 50px;
+	}
+	.s_company .item{
+		max-width: 300px;
+	}
+	.s_company .text{
+		width: 60%;
+	}
+	.s_services{
+		background-image: none;
+	}
+	.s_services .banks{
+		background-image: url(../img/bg/bg_services.png);
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center top;
+		padding: 90px 0;
+		margin-top: 50px;
+	}
+	.s_advantages .item{
+		padding-left: 80px;
+	}
+	.s_advantages .item .icon{
+		max-width: 70px;
+	}
+	.s_advantages .item p{
+		font-size: 13px;
+	}
+	.s_team .item .quotes{
+		margin-top: 5px;
+		-webkit-background-size: 200px;
+		background-size: 200px;
+		font-size: 23px;
+	}
+	.s_team .carousel .item{
+		max-width: 210px;
+	}
+	.s_reviews .item{
+		padding-left: 200px;
+		background-position: 140px 0;
+	}
+}
+@media only screen and (max-width : 991px) {
+	br{
+		display: none;
+	}
+	h2{
+		font-size: 30px;
+	}
+	.flex:not(.flex_mobile){
+		display: block;
+	}
+	.flex_tabs{
+		max-width: 370px;
+		margin: 0 auto;
+	}
+	.tabs{
+		margin: 20px auto;
+	}
+	.tabs .tab{
+		max-width: none;
+		display: block;
+	}
+	.s_company{
+		padding: 50px 0 0;
+	}
+	.s_company .wrap{
+		display: block;
+	}
+	.s_company .img{
+		margin: 0 0 30px;
+		max-width: 400px;
+	}
+	.s_company .text{
+		padding: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+	.s_company .item:nth-child(2)::before,
+	.s_company .item:nth-child(3)::before{
+		display: none;
+	}
+	.s_company .info{
+		margin-top: 50px;
+	}
+	.s_services{
+		margin: 0;
+		padding: 0;
+	}
+	.s_services .cards{
+		margin: 0;
+		padding: 50px 0 0;
+	}
+
+	.s_services .banks{
+		padding: 50px 0;
+	}
+	.s_services .banks_logo{
+		margin-top: 10px;
+	}
+	.s_services .banks_logo .img{
+		display: inline-block;
+		margin: 15px 0;
+		vertical-align: middle;
+	}
+	.s_services .item{
+		max-width: 225px;
+		padding: 20px 15px;
+		margin-left: -4px;
+	}
+	.s_services .item:first-child{
+		margin-left: 0;
+	}
+	.s_services .item p{
+		min-height: 150px;
+	}
+	.s_offer{
+		text-align: center;
+		padding-top: 50px;
+	}
+	.s_offer .bg::before{
+		background-image: none;
+	}
+	.s_offer .wrap{
+		padding: 60px 0;
+	}
+	.s_advantages,
+	.s_team{
+		padding: 50px 0;
+	}
+	.s_advantages .wrap{
+		margin-top: 10px;
+	}
+	.s_team .wrap{
+		margin-top: 35px;
+	}
+	.s_team .item .img,
+	.s_team .carousel .item{
+		max-width: 270px;
+		margin: 0 auto;
+	}
+	.s_team .item .right{
+		padding: 20px 0 0;
+	}
+	.s_team .item .img{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.s_team .item .quotes{
+		-webkit-background-size: 224px;
+		background-size: 224px;
+		font-size: 19px;
+		padding: 30px 0;
+		background-position: left center;
+	}
+	.s_scheme{
+		padding-top: 40px;
+	}
+	.s_scheme h2{
+		max-width: 370px;
+		margin: 0 auto;
+	}
+	.s_scheme .wrap{
+		margin-top: 0;
+		box-shadow: 0 0 54px 6px rgba(0, 0, 0, 0.04);
+		padding: 20px 0;
+	}
+	.s_scheme .wrap::before{
+		display: none;
+	}
+	.s_reviews .item{
+		padding: 0;
+		background-image: none;
+		min-height: 1px;
+	}
+	.s_reviews{
+		padding: 40px 0 0;
+	}
+	.s_reviews .item .left{
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.s_reviews .btn_wrap{
+		margin-top: 30px;
+	}
+	.s_contacts .tabs{
+		border: none;
+	}
+	.s_contacts .tabs .tab{
+		width: auto;
+		margin: 5px 0;
+		border: 1px solid #dedede;
+		border-radius: 3px;
+	}
+	.s_contacts .tabs .tab:hover,
+	.s_contacts .tabs .tab.active{
+		border-color: transparent;
+	}
+	.s_contacts .wrap{
+		position: relative;
+		top: 0;
+		left: 0;
+		-moz-transform: translate(0,0);
+		-ms-transform: translate(0,0);
+		-webkit-transform: translate(0,0);
+		-o-transform:translate(0,0);
+		transform:translate(0,0);
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+	.s_contacts .wrap .bg{
+		box-shadow: none;
+		margin: 0 auto;
+		max-width: 410px;
+		padding: 0 25px;
+	}
+	.s_contacts .wrap li .location span{
+		display: block;
+	}
+	.s_contacts .tab_content{
+		margin: 0;
+	}
+	.s_contacts .tab_item{
+		min-height: 200px;
+	}
+	.s_contacts .map{
+		height: 400px;
+	}
+	footer{
+		padding: 20px 0;
+	}
+	footer .wrap > *{
+		width: 30%;
+	}
+}
+
+@media only screen and (max-width : 767px) {
+	h2{
+		font-size: 26px;
+	}
+	.container{
+		padding: 0 25px;
+	}
+	.owl-prev{
+		left: 15px;
+		margin: 0;
+	}
+	.owl-next{
+		right: 15px;
+		margin: 0;
+	}
+	.header_main .btn_shadow{
+		margin-top: 40px;
+	}
+	.s_company .info{
+		margin-top: 40px;
+	}
+	.s_company .item{
+		display: block;
+		margin: 0 auto;
+	}
+	.s_company .item::before{
+		height: 1px;
+		width: 90px;
+		top: 0;
+		right: 0;
+		left: 0;
+		margin: auto;
+	}
+	.s_company .item:nth-child(2)::before,
+	.s_company .item:nth-child(3)::before{
+		display: block;
+	}
+	.s_services h2{
+		max-width: 270px;
+		margin: 0 auto;
+	}
+	.s_services .banks{
+		padding: 30px 0;
+	}
+	.s_services .item:first-child{
+		margin-left: auto;
+	}
+	.s_services .item{
+		margin-left: 0;
+		display: block;
+		margin: 0 auto;
+		max-width: 270px;
+		min-height: 1px;
+	}
+	.s_services .item:not(:first-child){
+		border-top: none
+	}
+	.s_services .item:not(:first-child){
+		border-left: 1px solid #dedede;;
+	}
+	.s_services .item p{
+		min-height: 1px;
+	}
+	.s_team .item .right{
+		max-width: 270px;
+		margin: 20px 0 0;
+		padding: 0;
+	}
+	.s_offer .flex{
+		display: block;
+	}
+	.s_offer .date{
+		font-size: 17px;
+	}
+	.s_advantages,
+	.s_team{
+		padding: 40px 0;
+	}
+	.s_scheme .wrap{
+		padding: 10px 0;
+	}
+	.s_scheme .item{
+		min-height: 1px;
+		margin: 30px auto;
+		padding: 0 10px;
+	}
+	.s_scheme .item .btn_shadow{
+		margin-top: 0;
+	}
+	.s_contacts .map{
+		height: 300px;
+	}
+	.fancybox-close {
+		top: 20px;
+	}
+	.fancybox-wrap {
+		position: fixed!important;
+		top: 0 !important;
+		left: 0 !important;
+		bottom: 0 !important;
+		right: 0 !important;
+		right: 20px;
+		width: auto !important;
+		height: auto !important;
+		overflow: scroll;
+	}
+	.fancybox-skin {
+		height: 100%!important;
+	}
+	.fancybox-overlay{
+		background-color: rgba(37,28,51,1);
+	}
+	.fancybox-inner, .fancybox-outer {
+		margin: auto;
+		position: relative;
+		width: 100%!important;
+		height: 100%!important;
+	}
+	.popup{
+		display: -webkit-flex!important;
+		display: -moz-flex!important;
+		display: -ms-flex!important;
+		display: -o-flex!important;
+		display: flex!important;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		min-height: 100%;
+		width: 100%;
+		font-size: 15px;
+	}
+	.popup h2{
+		font-size: 23px;
+		letter-spacing: 0;
+	}
+	.popup p br{
+		display: none;
+	}
+	.popup#policy{
+		padding: 40px 25px;
+	}
+	input:not(.btn){
+		height: 65px;
+		margin-bottom: 5px;
+	}
+	.jq-selectbox__trigger-arrow{
+		right: 10px;
+	}
+	.jq-selectbox__select-text{
+		font-size: 14px;
+		padding: 0 10px;
+	}
+	footer{
+		text-align: center;
+		padding: 30px 0;
+	}
+	footer .wrap > *{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	footer .wrap{
+		display: block;
+	}
+	footer .logo{
+		margin: 0 auto;
+	}
+	footer .logo a{
+		margin: 0 auto;
+	}
+	footer .policy{
+		margin: 30px 0;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	h2{
+		font-size: 22px;
+	}
+	.s_services .banks_logo .img{
+		max-width: 135px;
+	}
+	.s_contacts .map{
+		height: 200px;
+	}
+	.popup#policy{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.popup#policy h2{
+		font-size: 18px;
+	}
+
+}
+@media only screen and (max-width : 320px) {
+
+}
+@media only screen and (min-width : 768px) {
+
+}
+@media only screen and (min-width : 992px) {
+
+}
+@media only screen and (min-width : 1220px) {
+	.container{
+		width: 1140px;
+	}
+}
