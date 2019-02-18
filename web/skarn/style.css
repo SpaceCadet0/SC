@@ -1,0 +1,1019 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+@import url('https://fonts.googleapis.com/css?family=Bender');
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: "Montserrat", Arial, sans-serif;
+    background-image: url("img/pattern01.png");
+    background-repeat: repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: Vollkorn;
+    font-size: 36px;
+    color: #32343C;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 13px;
+    color: #32343C;
+}
+
+h4 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    color: #32343C;
+}
+
+p {
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #32343c;
+}
+
+
+/* HEADER */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    /* left: 0px;
+    top: 0px; */
+
+    background: #F1F1F1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+/* logo */
+.header .logo {
+    position: relative;
+    top: 15px;
+    left: 70px;
+    width: 80px;
+    height: 75px;
+
+}
+
+.header nav {
+    position: relative;
+    top: -55px;
+    left: 70%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin: 0px auto;
+}
+
+.header .menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.header .menu li {
+    padding: 25px;
+}
+
+.header .menu a {
+    font-family: Montserrat;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    color: #32343C;
+    padding-bottom: 10px;
+    /* margin-right: 30px; */
+}
+
+.header .menu a:hover,
+.header .menu a:focus,
+.header .menu a:active {
+    color: #7BBE4D;
+    border-bottom: 1px solid #7BBE4D;
+}
+
+.flex  {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    list-style: none;
+    /* width: 200px; */
+    bottom: 40px;
+    margin: 0;
+    margin-right: 60px;
+    padding: 0;
+    text-align: end;
+}
+
+.callback {
+    display: block;
+    
+}
+
+.callback a {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+
+    color: #32343C;
+}
+
+.callback a:hover {
+    color: #858585;
+}
+
+.login {
+    display: block;
+    
+}
+.login a {
+    font-family: Montserrat;
+    font-size: 15px;
+    text-decoration: none;
+
+    color: #32343C;
+}
+
+
+.login::before {
+    content: "";
+    background-image: url("img/login.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    
+    /* clear: both;
+    float: right;
+    margin-top: -30px;
+    margin-right: 185px; */
+}
+
+/* /HEADER */
+
+
+/* INFO */
+
+.info {
+    background-image: url("img/pic1.jpg");
+    width: 100%;
+    height: 788px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info-container {
+    position: relative;
+    display: block;
+    padding-left: 120px;
+    padding-top: 200px;
+
+    width: 40%;
+
+}
+
+.info h2 {
+    margin-top: 0px;
+}
+
+.info p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    color: #32343C;
+}
+
+.info .btn:hover {
+    background: #858585;
+}
+
+.info .btn {
+    margin-top: 30px;
+    height: 60px;
+    width: 200px;
+    background: #7BBE4D;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* /INFO */
+
+
+
+
+/*ABOUT*/
+
+.about {
+    background-image: url("img/pic2.jpg");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 1140px;
+    height: 735px;
+}
+
+.about .text {
+    margin-top: 100px;
+    margin-right: 100px;
+    width: 40%;
+    float: right;
+}
+
+.tab1 {
+    background: #f9f9f9;
+    width: 900px;
+    height: 145px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 1319px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.tab1 th {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    color: #32343C;
+}
+
+.tab1 td {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #32343C;
+}
+
+
+/*/ABOUT*/
+
+
+
+/* ADVANTAGES */
+
+
+.advant {
+    min-height: 1100px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.advant h2 {
+    padding-top: 100px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.logo_partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.logo_partners img {
+    margin: 10px;
+}
+
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    list-style: none;
+}
+
+
+.feedback ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    list-style: none;
+    margin: 0;
+    padding-top: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.feedback li {
+    width: 30%;
+    z-index: 1;
+
+}
+
+.feedback .digits {
+    position: relative;
+    top: -365px;
+    clear: both;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    z-index: 0;
+}
+
+.feedback .digits li {
+    font-family: Bender;
+    font-weight: 800;
+    font-size: 200px;
+    color: #eeeeee;
+
+}
+
+.feedback .tab2 {
+    position: relative;
+}
+
+/*/ADVANTAGES */
+
+
+
+/* CONTRACT */
+
+.contract {
+    background-image: url("img/pic3.jpg");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 1140px;
+    height: 549px;
+}
+.contract-container{
+    margin-left: 120px;
+    margin-top: 75px;
+    position: relative;
+    display: block;
+    width: 50%;
+}
+.contract h2 {
+    padding-top: 100px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.contract p {
+    font-family: Montserrat;
+    font-size: 18px;
+    color: #32343C;
+}
+
+.contract .btn {
+    height: 60px;
+    width: 200px;
+    background: #7BBE4D;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.contract .btn:hover {
+    background: #858585;
+}
+
+
+
+/* /CONTRACT */
+
+
+
+
+/* FOOTER */
+
+footer {
+    height: 150px;
+    background-color: #32343C;
+}
+
+
+.logo_footer {
+    position: absolute;
+    margin: 45px 0px 0px 120px;
+    width: 80px;
+    height: 75px;
+}
+
+.footer ul {
+    position: relative;
+    top: 40px;
+    left: 70%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin: 0px auto;
+    list-style: none;
+}
+
+.footer li {
+    float: left;
+    padding: 25px;
+}
+
+/* FLEX */
+/* 
+.footer ul{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0px auto;
+    list-style: none;
+}
+
+.footer li {
+    margin-top: 70px;
+} */
+
+.footer nav a {
+
+    font-family: Montserrat;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    color: #f1f1f1;
+    /* margin-right: 30px; */
+}
+
+.footer a:hover {
+    color: #7BBE4D
+        /* border-bottom: 2px solid #7BBE4D; */
+}
+
+.footer .phone2 a {
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+
+    /* position: absolute;
+    left: 74.04%;
+    right: 14.85%;
+    top: 30%; */
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+
+    color: #F1F1F1;
+    cursor: pointer;
+}
+
+.footer .phone2 a:hover {
+    color: #7BBE4D
+}
+
+
+.footer .lk2 a {
+    clear: both;
+    float: right;
+    margin-top: 15px;
+    margin-right: 50px;
+
+    /* position: absolute;
+    left: 75.69%;
+    right: 14.93%;
+    top: 55%; */
+    font-family: Montserrat;
+    font-size: 15px;
+    text-align: center;
+
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.footer .lk2 a:hover {
+    color: #7BBE4D
+}
+
+.footer .logopay {
+    clear: both;
+    float: right;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+
+
+
+/* /FOOTER */
+
+
+
+
+
+
+
+.photoblock {
+    /* position: absolute; */
+    z-index: -2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rect1 {
+    /* position: absolute; */
+    z-index: -1;
+    width: 1140px;
+    height: 10px;
+    /* left: 150px;
+    top: 798px; */
+    background: linear-gradient(90deg, #7BBE4D 0%, #CCE4BC 100%);
+}
+
+.rect2 {
+    /* position: absolute; */
+    z-index: 1;
+    width: 1140px;
+    height: 10px;
+    background: linear-gradient(90deg, #7BBE4D 0%, #CCE4BC 100%);
+    transform: rotate(-180deg);
+}
+
+
+
+
+
+/* POPUP */
+
+
+
+.modal-callback {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modal-callback:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modal-callback>div {
+    width: 400px;
+    min-width: 280px;
+    padding: 40px 25px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.37);
+    text-align: center;
+
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.modal-callback .close {
+    float: right;
+}
+
+.modal-callback h2 {
+    margin: 10px;
+}
+
+.modal-callback .input_check {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 11px;
+
+    margin: 10px;
+}
+
+.modal-callback .name {
+    height: 60px;
+    width: 275px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+
+    background: #F1F1F1;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+.modal-callback .phone {
+    height: 60px;
+    width: 275px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+
+    background: #F1F1F1;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+.modal-callback .btn {
+    /* clear: both; */
+    height: 60px;
+    width: 275px;
+    background: #7BBE4D;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+
+/*  */
+
+
+.modal-login {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modal-login:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modal-login>div {
+    width: 400px;
+    min-width: 280px;
+    padding: 40px 25px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.37);
+    text-align: center;
+
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.modal-login .close {
+    float: right;
+}
+
+.modal-login h2 {
+    font-family: Vollkorn;
+    font-size: 30px;
+    margin: 30px;
+}
+
+
+.modal-login .password,
+.modal-login .phone {
+    height: 60px;
+    width: 275px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+
+    background: #F1F1F1;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.modal-login .btn {
+    /* clear: both; */
+    height: 60px;
+    width: 275px;
+    background: #7BBE4D;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/*  */
+
+.modal-thanks {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modal-thanks:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modal-thanks>div {
+    width: 400px;
+    min-width: 280px;
+    padding: 40px 25px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.37);
+    text-align: center;
+
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.modal-thanks .close {
+    float: right;
+}
+
+
+/*  */
+
+
+
+
+.modal-regions {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modal-regions:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modal-regions>div {
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    font-size: 17px;
+
+    max-width: 800px;
+    width: 100%;
+    /* max-height: 700px; */
+    /* padding: 60px 50px; */
+    text-align: left;
+    font-size: 14px;
+    position: relative;
+    margin: 5% auto;
+    padding: 40px;
+    border-radius: 5px;
+
+}
+
+
+.modal-regions h3 {
+    margin-bottom: 5px;
+    color: #7BBE4D;
+}
+
+
+.modal-regions .close {
+    float: right;
+}
+
+.modal-regions ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 650px;
+    max-height: 700px;
+
+    list-style: none;
+}
+.modal-regions li {
+ display: block;
+ width: 30%;
+ margin: 1px;
+} 
+.modal-regions .h3-regions {
+    text-align: center;
+    font-family: Vollkorn;
+    color: #32343C;
+    font-size: 26px; 
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+.modal-personal {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modal-personal:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modal-personal>div {
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    font-size: 17px;
+
+    max-width: 770px;
+    width: 100%;
+    /* padding: 60px 50px; */
+    text-align: left;
+    font-size: 15px;
+    position: relative;
+    margin: 10% auto;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.modal-personal h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.modal-personal p {
+    margin-top: 20px;
+}
+
+.modal-personal .close {
+    float: right;
+}
+
+.wrap {
+    overflow: auto;
+    width: 800px;
+    height: 600px;
+    list-style: none;
+}
+
+/*  */
+
+.modal-contract {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modal-contract:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modal-contract>div {
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    font-size: 17px;
+
+    max-width: 770px;
+    width: 100%;
+    /* padding: 60px 50px; */
+    text-align: left;
+    font-size: 15px;
+    position: relative;
+    margin: 10% auto;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.modal-contract h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.modal-contract p {
+    margin-top: 20px;
+}
+
+.modal-contract .close {
+    float: right;
+}
+
+
+
+/* /POPUP */
