@@ -12,4 +12,3 @@
 						offset: _offset
 				});
 		};
-})(jQuery);
