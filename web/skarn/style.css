@@ -1,26 +1,47 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('fonts/montserrat-500.woff2');
+@import url('fonts/montserrat-600.woff2');
+@import url('fonts/montserrat-700.woff2');
+@import url('fonts/montserrat-regular.woff2');
 @import url('https://fonts.googleapis.com/css?family=Vollkorn');
 @import url('https://fonts.googleapis.com/css?family=Bender');
+
 
 body {
     padding: 0;
     margin: 0;
-
+    box-sizing: border-box;
     font-family: "Montserrat", Arial, sans-serif;
-    background-image: url("img/pattern01.png");
-    background-repeat: repeat;
+    font-size: 14px;
+    color: #32343c;
+    background: url("img/pattern01.png") repeat;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden
 }
 
 a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
 h2 {
+    margin-top: 0;
     font-family: Vollkorn;
     font-size: 36px;
     color: #32343C;
@@ -40,175 +61,8 @@ h4 {
     color: #32343C;
 }
 
-p {
-    font-family: Montserrat;
-    font-size: 14px;
-    color: #32343c;
-}
 
-
-/* HEADER */
-
-header {
-    position: fixed;
-    width: 100%;
-    height: 110px;
-    /* left: 0px;
-    top: 0px; */
-
-    background: #F1F1F1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 10;
-}
-
-/* logo */
-.header .logo {
-    position: relative;
-    top: 15px;
-    left: 70px;
-    width: 80px;
-    height: 75px;
-
-}
-
-.header nav {
-    position: relative;
-    top: -55px;
-    left: 70%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    margin: 0px auto;
-}
-
-.header .menu {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-}
-
-.header .menu li {
-    padding: 25px;
-}
-
-.header .menu a {
-    font-family: Montserrat;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-
-    color: #32343C;
-    padding-bottom: 10px;
-    /* margin-right: 30px; */
-}
-
-.header .menu a:hover,
-.header .menu a:focus,
-.header .menu a:active {
-    color: #7BBE4D;
-    border-bottom: 1px solid #7BBE4D;
-}
-
-.flex  {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    list-style: none;
-    /* width: 200px; */
-    bottom: 40px;
-    margin: 0;
-    margin-right: 60px;
-    padding: 0;
-    text-align: end;
-}
-
-.callback {
-    display: block;
-    
-}
-
-.callback a {
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 18px;
-    text-align: center;
-
-    color: #32343C;
-}
-
-.callback a:hover {
-    color: #858585;
-}
-
-.login {
-    display: block;
-    
-}
-.login a {
-    font-family: Montserrat;
-    font-size: 15px;
-    text-decoration: none;
-
-    color: #32343C;
-}
-
-
-.login::before {
-    content: "";
-    background-image: url("img/login.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    position: absolute;
-    
-    /* clear: both;
-    float: right;
-    margin-top: -30px;
-    margin-right: 185px; */
-}
-
-/* /HEADER */
-
-
-/* INFO */
-
-.info {
-    background-image: url("img/pic1.jpg");
-    width: 100%;
-    height: 788px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.info-container {
-    position: relative;
-    display: block;
-    padding-left: 120px;
-    padding-top: 200px;
-
-    width: 40%;
-
-}
-
-.info h2 {
-    margin-top: 0px;
-}
-
-.info p {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 14px;
-    color: #32343C;
-}
-
-.info .btn:hover {
-    background: #858585;
-}
-
-.info .btn {
+.button {
     margin-top: 30px;
     height: 60px;
     width: 200px;
@@ -216,7 +70,27 @@ header {
     border: none;
     border-radius: 5px;
     font-family: Montserrat;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button--small {
+    margin-top: 30px;
+    height: 40px;
+    width: 165px;
+    background: #7BBE4D;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-weight: 500;
     font-size: 14px;
     text-align: center;
 
@@ -228,6 +102,161 @@ header {
     cursor: pointer;
 }
 
+.button:hover {
+    background: #81c753;
+}
+.button--small:hover {
+    background: #81c753;
+}
+/* HEADER */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    background: #F1F1F1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+.header__container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.menu {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu__toggle {
+    align-self: center;
+    display: block;
+    width: 30px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.menu__toggle::before {
+    bottom: 0;
+}
+.menu__toggle::after {
+    box-shadow: 0 10px 0 0 #32343C;
+    top: 0;
+}
+.menu__toggle::after, .menu__toggle::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: #32343C;
+    position: absolute;
+    transition-duration: .5s;
+}
+
+.menu__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__item {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.menu__item a {
+    color: #32343C;
+}
+
+.menu__item:hover,
+.menu__item:focus,
+.menu__item:active {
+    color: #7BBE4D;
+    border-bottom: 1.5px solid #7BBE4D;
+}
+
+.menu__login {
+    text-transform: none;
+}
+.menu__login::before {
+    content: "";
+    background-image: url("img/login.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.header__logo {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 85px;
+    height: 80px;
+    margin: auto;
+}
+
+
+.header__user-items {
+    display: block;
+    /* flex-wrap: wrap; */
+}
+
+ /*
+.login::before {
+    content: "";
+    background-image: url("img/login.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+} */
+
+/* /HEADER */
+
+
+/* INFO */
+
+.info {
+    background-image: url("img/jpg/img1.jpg");
+    position: relative;
+    max-width: 100%;
+    top: 110px;
+    height: 704px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.info__title {
+    position: relative;
+    display: block;
+    padding-left: 120px;
+    padding-top: 100px;
+
+}
+.info__container {
+    position: relative;
+    display: block;
+    padding-left: 120px;
+    max-width: 400px;
+
+}
+
+.info__item {
+    padding-bottom: 20px ;
+
+}
+.info__item::before {
+    content: "";
+    background-image: url("img/svg/list-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+}
+
+
 /* /INFO */
 
 
@@ -236,10 +265,19 @@ header {
 /*ABOUT*/
 
 .about {
-    background-image: url("img/pic2.jpg");
+    position: relative;
+    top: 110px;
+
+    background-image: url("img/jpg/img2.jpg");
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 1140px;
-    height: 735px;
+    max-width: 100%;
+    height: 940px;
+}
+.about__container {
+    max-width: 500px;
+    margin-left: 585px;
+    margin-right: 100px;
+    padding-top: 100px;
 }
 
 .about .text {
@@ -553,9 +591,11 @@ footer {
 }
 
 .rect1 {
-    /* position: absolute; */
+    position: relative;
+    top: 110px;
+
     z-index: -1;
-    width: 1140px;
+    max-width: 1140px;
     height: 10px;
     /* left: 150px;
     top: 798px; */
@@ -563,9 +603,10 @@ footer {
 }
 
 .rect2 {
-    /* position: absolute; */
-    z-index: 1;
-    width: 1140px;
+    position: relative;
+    top: 110px;
+    z-index: -1;
+    max-width: 1140px;
     height: 10px;
     background: linear-gradient(90deg, #7BBE4D 0%, #CCE4BC 100%);
     transform: rotate(-180deg);

@@ -12,34 +12,40 @@
 </head>
 
 <body>
-
-
     <!-- HEADER -->
 
     <header id="header" class="header">
-        <div class="container">
-            <div class="logo">
-                <a href="#header"><img src="img/logo.svg" alt="НАЗВАНИЕ"></a>
+        <h1 class="visually-hidden">Сервис комплексной аналитики рынка недвижимости </h1>
+        <div class="header__container">
+            <div>
+                <nav class="menu menu--closed menu--nojs">
+                    <button class="menu__toggle" type="button" title="Открыть меню">МЕНЮ</button>
+                    <div class="menu__wrapper">
+                        <!-- <ul class="menu__items">
+                    <li class="menu__item menu__item--active"><a href="#about">О компании</a></li>
+                    <li class="menu__item"><a href="#advantages">Преимущества</a></li>
+                    <li class="menu__item"><a href="#feedback">Отзывы</a></li>
+                    <li class="menu__item"><a href="#contacts">Контакты</a></li>
+                    <li class="menu__item"><a href="#contract">Оплата</a></li>
+                    <li class="menu__item"><a href="#***">Сдача жилья</a></li>
+                    <li class="menu__item menu__login"><a href="#***">личный кабинет</a></li>
+                </ul> -->
+                    </div>
+                </nav>
             </div>
-            <ul class="flex">
-                <li class="callback">
-                    <a href="#regions" data-title='Обратный звонок'>8-888-888-8888</a>
-                </li>
-                <li class="login">
+            <div class="header__logo">
+                <a href="./index.html"><img src="img/logo.svg" alt="СКАРН">СКАРН</a>
+            </div>
+            <div>
+                <ul class="header__user-items">
+                    <li class="header__phone">
+                        <a href="#regions" data-title='Обратный звонок'>8-888-888-8888</a>
+                    </li>
+                    <!-- <li class="header__login">
                     <a href="#login">личный кабинет</a>
-                </li>
-            </ul>
-
-            <nav>
-                <!-- <a href="#"></a> -->
-                <ul class="menu">
-                    <li><a href="#about">О компании</a></li>
-                    <li><a href="#advantages">Преимущества</a></li>
-                    <li><a href="#feedback">Отзывы</a></li>
-                    <li><a href="#contract">Оплата</a></li>
+                </li> -->
                 </ul>
-            </nav>
-
+            </div>
         </div>
     </header>
 
@@ -48,21 +54,23 @@
 
     <main class="container">
 
-
         <!-- INFO -->
 
         <section class="info">
-            <div class="info-container">
-                <h2>НАЗВАНИЕ</h2>
-                <p>Находим наиболее подходящие для конкретного клиента предложения по аренде жилой и коммерческой
-                    недвижимости. <br>
+            <h2 class="info__title">НАЙМ ЖИЛЬЯ БЕЗ ПОСРЕДНИКОВ</h2>
 
-                    Собираем базу данных с актуальными предложениями об аренде недвижимости. <br>
+            <div class="info__container">
+                <ul class="info__list">
+                    <li class="info__item">быстро найдем наиболее подходящее для Вас предложение</li>
 
-                    Наши клиенты получают только актуальную информацию об арендодателях из ценах и состоянии помещений
-                    которые они сдают
-                </p>
-                <a href="#modal-contract" class="btn">Заключить договор</a>
+                    <li class="info__item">заселение с нами надежно и безопасно, более 4500 новых предложений
+                        ежемесячно</li>
+
+                    <li class="info__item">качественно подходим к своему делу, мы гарантируем актуальность информации</li>
+
+                    <li class="info__item">предоставим только прямые предложения по аренде от собственников</li>
+                </ul>
+                <a href="#modal-contract" class="info__button button">Заключить договор</a>
             </div>
         </section>
 
@@ -73,34 +81,33 @@
 
         <!-- ABOUT -->
 
-        <section class="about container" id="about">
-            <!-- <img class="photoblock" src="img/pic2.jpg" alt=""> -->
-            <div class="text">
-                <h2>О КОМПАНИИ</h2>
-                <p>Цель компании [название] - упростить людям поиск жилой и жилой и коммерческой недвижимости.
-                    Специалисты [название компании] подробно выясняют ваши потребности и находят наиболее адекватные
-                    варианты недвижимости в аренду. При поиске учитываются все факторы: цена, район, наличие ремонта в
-                    квартире (или офисе).
+        <section class="about" id="about">
+            <div class="about__container">
+                <h2 class="about__title">О КОМПАНИИ</h2>
+                <p class="about__text">Наша цель – упростить поиск жилой и коммерческой недвижимости каждому желающему
+                    вне зависимости от
+                    его опыта и знания рынка. Специалисты отдела продаж / аренды подробно выяснят Ваши потребности и
+                    найдут наиболее адекватные варианты недвижимости. При поиске учитываются все факторы: цена, район,
+                    качество ремонта, комплектацию мебелью и техникой.<br><br>
 
                     Из всей массы существующих на рынке предложений мы отсеиваем устаревшие и выявляем недобросовестных
-                    арендодателей.
+                    арендодателей.<br><br>
 
                     Поэтому наши клиенты получают только лучшее, в полном соответствии со своими запросами.
-
                 </p>
             </div>
-            <table class="tab1" align="center">
-                <tr>
-                    <th>10 лет</th>
-                    <th>9 000 000 кв.м</th>
-                    <th>свыше 80</th>
-                </tr>
-                <tr>
-                    <td>опыт работы компании<br> на рынке недвижимости</td>
-                    <td>недвижимости реализовано<br> с нашей помощью</td>
-                    <td>агенств недвижимости<br> сотрудничает с нами</td>
-                </tr>
-            </table>
+            <div class="about__table">
+                <h3 class="table__title">10 лет</h3>
+                <p class="table__text">опыт работы компании<br> на рынке недвижимости</p>
+
+                <h3 class="table__title">9 000 000 кв.м</h3>
+                <p class="table__text">недвижимости реализовано<br> с нашей помощью</p>
+
+                <h3 class="table__title">свыше 80</h3>
+                <p class="table__text">агенств недвижимости<br> сотрудничает с нами</p>
+
+                <!-- ADD 3 ITEMS MORE -->
+            </div>
         </section>
 
         <!-- /ABOUT -->
@@ -109,21 +116,17 @@
 
         <!-- ADVANTAGES -->
 
-        <section class="advant" id="advantages">
-            <div class="partners">
-                <h2>АГЕНСТВА-ПАРТНЕРЫ</h2>
-                <div class="logo_partners">
-                    <img src="img/novosel-logo1.png" alt="">
-                    <img src="img/nahodka-logo.png" alt="">
-                    <img src="img/etaji-logo.png" alt="">
-                    <img src="img/mk-logo.png" alt="">
-                </div>
-            </div>
-            <hr align="center" width=70% size="2" color="#A7DF80" />
+        <section class="advantages" id="advantages">
+
+            <!-- <hr align="center" width=70% size="2" color="#A7DF80" /> -->
+
             <div class="features">
-                <h2>ПОЧЕМУ ВЫБИРАЮТ ИМЕННО НАС:</h2>
-                <ul class="list">
-                    <li class="hz1">
+                <h2 class="features__title">ПОЧЕМУ ВЫБИРАЮТ ИМЕННО НАС:</h2>
+                <h3 class="features__subtitle">Все вопросы по поиску и аренде жилья Вы можете решить с нами.
+
+                    Для этого мы предлагаем и гарантируем:</h3>
+                <ul class="features__list">
+                    <li class="features__item">
                         <img src="img/advantages1.svg" alt="">
                         <div class="text">
                             <h3>БЕЗОПАСНЫЕ СДЕЛКИ</h3>
@@ -132,13 +135,35 @@
                                 с недвижимостью</p>
                         </div>
                     </li>
-                    <li class="hz2">
+                    <li class="features__item">
                         <img src="img/advantages2.svg" alt="">
                         <h3>ВСЕСТОРОННЯЯ ПОДДЕРЖКА</h3>
                         <p>Сопровождение и помощь<br>
                             на всех этапах нашего<br> сотрудничества</p>
                     </li>
-                    <li class="hz3">
+                    <li class="features__item">
+                        <img src="img/advantages3.svg" alt="">
+                        <h3>ПРАВИЛЬНАЯ РЕКЛАМА</h3>
+                        <p>Знаем всё о недвижимости,<br>
+                            умеем правильно и своевременно<br>
+                            ее представить</p>
+                    </li>
+                    <li class="features__item">
+                        <img src="img/advantages1.svg" alt="">
+                        <div class="text">
+                            <h3>БЕЗОПАСНЫЕ СДЕЛКИ</h3>
+                            <p>Юридическая поддержка<br>
+                                клиентов при сделках<br>
+                                с недвижимостью</p>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <img src="img/advantages2.svg" alt="">
+                        <h3>ВСЕСТОРОННЯЯ ПОДДЕРЖКА</h3>
+                        <p>Сопровождение и помощь<br>
+                            на всех этапах нашего<br> сотрудничества</p>
+                    </li>
+                    <li class="features__item">
                         <img src="img/advantages3.svg" alt="">
                         <h3>ПРАВИЛЬНАЯ РЕКЛАМА</h3>
                         <p>Знаем всё о недвижимости,<br>
@@ -147,27 +172,46 @@
                     </li>
                 </ul>
             </div>
-            <hr align="center" width=70% size="2" color="#A7DF80" />
+        </section>
 
-            <table class="tab2" id="r_send_table" style="margin: 40px auto 12px auto">
-                <tbody>
-                    <tr>
-                        <td><input id="r_caption" type="text" style="width: 426px" placeholder="Ваш сервис поиска жилья*">
-                            <p><input id="r_address" type="text" style="width: 426px" placeholder="Адрес сервиса поиска жилья"></p>
-                            <p><input id="r_name" type="text" style="width: 426px" placeholder="Ваше имя*"></p>
-                            <p><input id="r_client_phone" type="text" style="width: 426px" placeholder="Ваш телефон"></p>
-                            <p><input id="r_email" type="text" style="width: 426px" placeholder="Ваша электронная почта"></p>
-                        </td>
-                        <td style="padding-left: 23px"><textarea id="r_text" style="width: 426px; height: 12.22em; box-sizing: border-box"
-                                placeholder="Отзыв о сервисе поиска жилья*"></textarea></td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- /ADVANTAGES -->
 
-            <div id="feedback" class="feedback">
-                <h2>НАШИ КЛИЕНТЫ ВСЕГДА ОСТАЮТСЯ ДОВОЛЬНЫМИ</h2>
-                <ul>
-                    <li>
+        <!-- BANNER -->
+        <section class="banner">
+            <h2 class="banner__title">ЗАГОЛОВОК</h2>
+            <p class="banner__text">Прямо сейчас начните выбирать новое жилье,
+                а мы сделаем так, чтобы оно отвечало вашим желаниям и потребностям!
+            </p>
+            <a href="#modal-contract" class="banner__button button">Начать сейчас!</a>
+        </section>
+
+        <!-- /BANNER -->
+
+        <!-- FEEDBACK -->
+
+        <section class="feedback">
+            <div class="feedback__form">
+                <h2>ВЫ МОЖЕТЕ ОСТАВИТЬ ОТЗЫВ</h2>
+                <table class="tab2" id="r_send_table" style="margin: 40px auto 12px auto">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p><input id="r_name" type="text" style="width: 426px" placeholder="Ваше имя"></p>
+                                <p><input id="r_client_phone" type="text" style="width: 426px" placeholder="Ваш телефон"></p>
+                                <p><input id="r_email" type="text" style="width: 426px" placeholder="Номер договора"></p>
+                            </td>
+                            <td style="padding-left: 23px"><textarea id="r_text" style="width: 426px; height: 7.25em; box-sizing: border-box"
+                                    placeholder="Текст отзыва"></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="feedback__send button--small">Отправить</button>
+            </div>
+
+            <div>
+                <h2>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+                <ul class="feedback__items">
+                    <li class="feedback__item">
                         <h4>Ирина</h4>
                         <p>Всем советую обращаться к Риэлтору с большой буквы: Андрейчук Ирине! Когда я к ней
                             обратилась,
@@ -177,7 +221,7 @@
                         </p>
 
                     </li>
-                    <li>
+                    <li class="feedback__item">
                         <h4>Ольга Алексеевна</h4>
                         <p>
                             В агенство недвижимости "Дом недвижимости" обратилась в связи с возникшей необходимости в
@@ -187,7 +231,7 @@
                             к Черкашиной Галине Михайловне.
                         </p>
                     </li>
-                    <li>
+                    <!-- <li class="feedback__item">
                         <h4>Виктор Иванович</h4>
                         <p>
                             В начале этого года я решил на накопленные средства купить квартиру в Екатеринбурге
@@ -196,38 +240,137 @@
                             за
                             высокий профессионализм и внимательность.
                         </p>
-                    </li>
+                    </li> -->
                 </ul>
-                <ul class="digits">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul>
-
+                <button class="feedback__more button--small">Показать еще</button>
             </div>
 
+            <hr align="center" width=70% size="2" color="#A7DF80" />
+
+            <div class="partners">
+                <h2 class="partners__title">АГЕНСТВА-ПАРТНЕРЫ</h2>
+                <div class="partners__logo">
+                    <img class="partners__img" src="img/novosel-logo1.png" alt="">
+                    <img class="partners__img" src="img/nahodka-logo.png" alt="">
+                    <img class="partners__img" src="img/etaji-logo.png" alt="">
+                    <img class="partners__img" src="img/mk-logo.png" alt="">
+                    <img class="partners__img" src="img/novosel-logo1.png" alt="">
+                    <img class="partners__img" src="img/nahodka-logo.png" alt="">
+                    <img class="partners__img" src="img/etaji-logo.png" alt="">
+                    <img class="partners__img" src="img/mk-logo.png" alt="">
+                    <img class="partners__img" src="img/novosel-logo1.png" alt="">
+                    <img class="partners__img" src="img/nahodka-logo.png" alt="">
+                    <img class="partners__img" src="img/etaji-logo.png" alt="">
+                    <img class="partners__img" src="img/mk-logo.png" alt="">
+                    <img class="partners__img" src="img/novosel-logo1.png" alt="">
+                    <img class="partners__img" src="img/nahodka-logo.png" alt="">
+                    <img class="partners__img" src="img/etaji-logo.png" alt="">
+                    <img class="partners__img" src="img/mk-logo.png" alt="">
+                    <img class="partners__img" src="img/nahodka-logo.png" alt="">
+                    <img class="partners__img" src="img/etaji-logo.png" alt="">
+                    <img class="partners__img" src="img/mk-logo.png" alt="">
+                </div>
+            </div>
         </section>
 
-        <!-- /ADVANTAGES -->
+        <!-- /FEEDBACK -->
 
         <div class="rect1"></div>
 
         <!-- CONTRACT -->
 
         <section class="contract" id="contract">
-                <h2>ДОГОВОР-ОПЛАТА</h2>
+            <h2 class="contract__title">ДОГОВОР-ОПЛАТА</h2>
 
-            <div class="contract-container">
+            <div class="contract__container">
 
-                <p>Для тех кто предпочитает не тратить свое время на поездки в офис у нас появилась функция оплаты
+                <p class="contract__text">Для тех кто предпочитает не тратить свое время на поездки в офис у нас
+                    появилась функция оплаты
                     доступа
                     к информационной базе в режиме онлайн.<br>Вся процедура производится в два клика прямо на сайте.</p>
 
-                <a href="#modal-contract" class="btn">Заключить договор</a>
+                <a href="#modal-contract" class="contract__button button">Заключить договор</a>
             </div>
         </section>
 
         <!-- /CONTRACT -->
+
+        <!-- CONTACTS -->
+        <section class="contacts">
+            <h2 class="contacts__title">КОНТАКТЫ</h2>
+            <div class="contacts__data">
+                <div class="support">
+                    <p class="support__text">Горячая линия службы поддержки:</p>
+                    <p class="support__phone">+7 (343) 342-52-99</p>
+                </div>
+                <div class="social">
+                    <ul class="social__items">
+                        <li>WhatsApp</li>
+                        <li>Telegram</li>
+                        <li>Viber</li>
+                    </ul>
+                </div>
+                <div class="mail">
+                    <ul class="mail__items">
+                        <li>Служба поддержки: <span class="mail__link">help@skarn.ru</span></li>
+                        <li>Бухгалтерия: <span class="mail__link">buh@skarn.ru</span></li>
+                        <li>Юридический отдел: <span class="mail__link">conf@skarn.ru</span></li>
+                    </ul>
+                </div>
+                <div class="time">
+                    <ul class="time__items">
+                        <li>Время работы службы поддержки:
+                            <span class="time__"> ежедневно, 08:00 – 20:00 по мск.</span></li>
+                        <li>График работы компании:
+                            <span class="time__"> пн – пт, 08:00 – 17:00 по мск.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <h3>ОТПРАВИТЬ СООБЩЕНИЕ ДИРЕКТОРУ</h3>
+            <div>
+                <form>
+                    <div>
+                        <div> <input name="name" class="__name" placeholder="Ваше имя" value="">
+                            <input name="phone" class="__phone" placeholder="Ваш телефон">
+                            <input name="contract" class="__contract" placeholder="Номер договора"> </div>
+                        <div>
+                            <input name="message" placeholder="Текст сообщения">
+                        </div>
+                    </div>
+                    <div><input type="submit" class="button" value="Оставить заявку"></div>
+                </form>
+            </div>
+            <div class="contacts__tab">
+                <div class="tab__titles">
+                    <div class="tab__title">СПРАВКА</div>
+                    <div class="tab__title">АВТОРИЗАЦИЯ</div>
+                    <div class="tab__title">ЗАГОЛОВОК-3</div>
+                </div>
+                <div class="tab_panel">
+                    <ul class="tab__list">
+                        <li class="tab__item">Для корректной обработки обращения клиенту необходимо сообщить номер
+                            договора, адрес
+                            электронной почты и номер контактного телефона</li>
+                        <li class="tab__item">В случае отсутствия идентифицирующих клиента сведений обращение будет
+                            оставлено без
+                            рассмотрения.</li>
+                        <li class="tab__item">Запросы в службу поддержки клиентов рассматриваются незамедлительно при
+                            появлении свободных
+                            специалистов.</li>
+                        <li class="tab__item">Письменные обращения по электронной почте обрабатываются в порядке
+                            очереди не более 10
+                            рабочих дней.</li>
+                        <li class="tab__item">Ответы на сообщения Директору предоставляются в течение месяца.</li>
+                        <li class="tab__item">В случаях, если Вы утратили номер телефона на который заключен договор,
+                            не имеете доступа к
+                            электронной почте или не помните номера договора – доступно восстановление доступа к
+                            услуге. Для этого опишите свою ситуацию на электронную почту help@skarn.ru и укажите
+                            контактный номер телефона.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
 
         <div class="rect2"></div>
 
@@ -235,29 +378,14 @@
 
     <!-- FOOTER -->
 
-    <footer class="container">
-        <div class="footer">
-            <a href="index.html"><img class="logo_footer" src="img/logo.svg" alt="logo"></a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">О компании</a>
-                    </li>
-                    <li>
-                        <a href="#advantages">Преимущества</a>
-                    </li>
-                    <li>
-                        <a href="#feedback">Отзывы</a>
-                    </li>
-                    <li>
-                        <a href="#contract">Оплата</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="phone2"><a href="#callback">8-800-800-8080</a></div>
-            <div class="lk2"><a href="#login">личный кабинет</a></div>
-            <div class="logopay"><img src="img/logopay.png"></img></div>
+    <footer class="footer container">
+        <div class="footer__copyright">© 2011-2019. Все права защищены.
+            <a class="footer__policy" href="#policy">Политика конфиденциальности</a></div>
+        <div class="footer__logo">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
         </div>
+        <div class="footer__phone"><a href="#callback">8-800-800-8080</a></div>
+        <div class="footer__logopay"><img src="img/logopay.png"></img></div>
     </footer>
 
     <!-- FOOTER -->
@@ -320,31 +448,31 @@
 
                     <ul>
                         <h3>А</h3>
-                        <li><a href="#callback">Адыгея</a> </li>
-                        <li><a href="#">Алтай</a></li>
+                        <li><a href="#callback">Адыгея респ.</a> </li>
+                        <li><a href="#">Алтай респ.</a></li>
                         <li><a href="#">Алтайский край </a></li>
                         <li><a href="#">Амурская область</a> </li>
                         <li><a href="#">Архангельская область</a> </li>
                         <li><a href="#">Астраханская область</a> </li>
                         <h3>Б</h3>
-                        <li><a href="#">Башкортостан </a> </li>
+                        <li><a href="#">Башкортостан респ. </a> </li>
                         <li><a href="#">Белгородская область</a> </li>
                         <li><a href="#">Брянская область</a> </li>
-                        <li><a href="#">Бурятия</a> </li>
+                        <li><a href="#">Бурятия респ.</a> </li>
                         <h3>В</h3>
                         <li><a href="#">Владимирская область </a></li>
                         <li><a href="#">Волгоградская область</a> </li>
                         <li><a href="#">Вологодская область</a> </li>
                         <li><a href="#">Воронежская область </a></li>
                         <h3>Д</h3>
-                        <li><a href="#">Дагестан</a> </li>
+                        <li><a href="#">Дагестан респ.</a> </li>
                         <h3>Е</h3>
                         <li><a href="#">Еврейская автономная область </a></li>
                         <h3>З</h3>
-                        <li><a href="#">Забайкальский край </a></li>
+                        <li><a href="#">Забайкальский край</a></li>
                         <h3>И</h3>
                         <li><a href="#">Ивановская область</a> </li>
-                        <li><a href="#">Ингушетия </a></li>
+                        <li><a href="#">Ингушетия респ.</a></li>
                         <li><a href="#">Иркутская область</a> </li>
                         <br>
                         <br>
@@ -352,39 +480,39 @@
                         <h3>К</h3>
                         <li><a href="#">Кабардино-Балкария</a></li>
                         <li><a href="#">Калининградская область</a> </li>
-                        <li><a href="#">Калмыкия</a></li>
+                        <li><a href="#">Калмыкия респ.</a></li>
                         <li><a href="#">Калужская область</a> </li>
                         <li><a href="#">Камчатский край</a> </li>
                         <li><a href="#">Карачаево-Черкесия</a></li>
-                        <li><a href="#">Карелия</a> </li>
+                        <li><a href="#">Карелия респ.</a> </li>
                         <li><a href="#">Кемеровская область</a> </li>
                         <li><a href="#">Кировская область</a> </li>
-                        <li><a href="#">Коми</a> </li>
-                        <li><a href="#">Костромская область </a></li>
-                        <li><a href="#">Краснодарский край </a></li>
-                        <li><a href="#">Красноярский край </a></li>
-                        <li><a href="#">Крым </a></li>
-                        <li><a href="#">Курганская область</a> </li>
-                        <li><a href="#">Курская область</a> </li>
+                        <li><a href="#">Коми респ.</a> </li>
+                        <li><a href="#">Костромская область</a></li>
+                        <li><a href="#">Краснодарский край</a></li>
+                        <li><a href="#">Красноярский край</a></li>
+                        <li><a href="#">Крым респ.</a></li>
+                        <li><a href="#">Курганская область</a></li>
+                        <li><a href="#">Курская область</a></li>
                         <h3>Л</h3>
-                        <li><a href="#">Ленинградская область </a></li>
-                        <li><a href="#">Липецкая область</a> </li>
+                        <li><a href="#">Ленинградская область</a></li>
+                        <li><a href="#">Липецкая область</a></li>
                         <h3>М</h3>
                         <li><a href="#">Магаданская область</a> </li>
-                        <li><a href="#">Марий Эл </a></li>
-                        <li><a href="#">Мордовия</a> </li>
+                        <li><a href="#">Марий Эл респ.</a></li>
+                        <li><a href="#">Мордовия респ.</a> </li>
                         <li><a href="#">Москва </a></li>
-                        <li><a href="#">Московская область</a> </li>
-                        <li><a href="#">Мурманская область</a> </li>
+                        <li><a href="#">Московская область</a></li>
+                        <li><a href="#">Мурманская область</a></li>
                         <h3>Н</h3>
-                        <li><a href="#">Ненецкий автономный округ </a></li>
-                        <li><a href="#">Нижегородская область</a> </li>
+                        <li><a href="#">Ненецкий автономный округ</a></li>
+                        <li><a href="#">Нижегородская область</a></li>
                         <li><a href="#">Новгородская область </a></li>
-                        <li><a href="#">Новосибирская область</a> </li>
+                        <li><a href="#">Новосибирская область</a></li>
                         <h3>О</h3>
-                        <li><a href="#">Омская область </a></li>
-                        <li><a href="#">Оренбургская область </a></li>
-                        <li><a href="#">Орловская область</a> </li>
+                        <li><a href="#">Омская область</a></li>
+                        <li><a href="#">Оренбургская область</a></li>
+                        <li><a href="#">Орловская область</a></li>
                         <h3>П</h3>
                         <li><a href="#">Пензенская область </a></li>
                         <li><a href="#">Пермский край </a></li>
@@ -397,7 +525,7 @@
                         <li><a href="#">Самарская область </a></li>
                         <li><a href="#">Санкт-Петербург </a></li>
                         <li><a href="#">Саратовская область</a> </li>
-                        <li><a href="#">Саха (Якутия)</a> </li>
+                        <li><a href="#">Саха (Якутия) респ.</a> </li>
                         <li><a href="#">Сахалинская область</a> </li>
                         <li><a href="#">Свердловская область</a> </li>
                         <li><a href="#">Севастополь</a> </li>
@@ -406,25 +534,25 @@
                         <li><a href="#">Ставропольский край</a> </li>
                         <h3>Т</h3>
                         <li><a href="#">Тамбовская область</a> </li>
-                        <li><a href="#">Татарстан</a> </li>
+                        <li><a href="#">Татарстан респ.</a> </li>
                         <li><a href="#">Тверская область</a> </li>
                         <li><a href="#">Томская область</a> </li>
                         <li><a href="#">Тульская область</a> </li>
-                        <li><a href="#">Тыва</a> </li>
+                        <li><a href="#">Тыва респ.</a> </li>
                         <li><a href="#">Тюменская область</a> </li>
                         <br>
                         <h3>У</h3>
-                        <li><a href="#">Удмуртия</a> </li>
+                        <li><a href="#">Удмуртия респ.</a> </li>
                         <li><a href="#">Ульяновская область</a> </li>
                         <h3>Х</h3>
                         <li><a href="#">Хабаровский край</a> </li>
-                        <li><a href="#">Хакасия</a> </li>
+                        <li><a href="#">Хакасия респ.</a> </li>
                         <li><a href="#">Ханты-Мансийский автономный округ</a> </li>
                         <h3>Ч</h3>
                         <li><a href="#">Челябинская область</a> </li>
-                        <li><a href="#">Чечня</a> </li>
-                        <li><a href="#">Чувашия</a> </li>
-                        <li><a href="#">Чукотка</a> </li>
+                        <li><a href="#">Чечня респ.</a> </li>
+                        <li><a href="#">Чувашия респ.</a> </li>
+                        <li><a href="#">Чукотский автономный округ</a> </li>
                         <h3>Я</h3>
                         <li><a href="#">Ямало-Ненецкий автономный округ</a> </li>
                         <li><a href="#">Ярославская область</a> </li>
