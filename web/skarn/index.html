@@ -17,9 +17,11 @@
     <header id="header" class="header">
         <h1 class="visually-hidden">Сервис комплексной аналитики рынка недвижимости </h1>
         <div class="header__container">
-            <div>
+            <!-- <div> --><div class="menu__title">МЕНЮ</div>
                 <nav class="menu menu--closed menu--nojs">
-                    <button class="menu__toggle" type="button" title="Открыть меню">МЕНЮ</button>
+                        
+
+                    <button class="menu__toggle" type="button" title="Открыть меню"></button>
                     <div class="menu__wrapper">
                         <!-- <ul class="menu__items">
                     <li class="menu__item menu__item--active"><a href="#about">О компании</a></li>
@@ -32,12 +34,12 @@
                 </ul> -->
                     </div>
                 </nav>
-            </div>
+            <!-- </div> -->
             <div class="header__logo">
-                <a href="./index.html"><img src="img/logo.svg" alt="СКАРН">СКАРН</a>
+                <a href="./index.html"><img src="img/svg/logo.svg" alt="СКАРН"></a>
             </div>
-            <div>
-                <ul class="header__user-items">
+            <div class="header__user-items">
+                <ul>
                     <li class="header__phone">
                         <a href="#regions" data-title='Обратный звонок'>8-888-888-8888</a>
                     </li>
@@ -57,10 +59,10 @@
         <!-- INFO -->
 
         <section class="info">
+            <div class="info__container">
             <h2 class="info__title">НАЙМ ЖИЛЬЯ БЕЗ ПОСРЕДНИКОВ</h2>
 
-            <div class="info__container">
-                <ul class="info__list">
+                    <ul class="info__list">
                     <li class="info__item">быстро найдем наиболее подходящее для Вас предложение</li>
 
                     <li class="info__item">заселение с нами надежно и безопасно, более 4500 новых предложений
@@ -71,6 +73,7 @@
                     <li class="info__item">предоставим только прямые предложения по аренде от собственников</li>
                 </ul>
                 <a href="#modal-contract" class="info__button button">Заключить договор</a>
+            </div>
             </div>
         </section>
 
@@ -96,18 +99,21 @@
                     Поэтому наши клиенты получают только лучшее, в полном соответствии со своими запросами.
                 </p>
             </div>
-            <div class="about__table">
-                <h3 class="table__title">10 лет</h3>
-                <p class="table__text">опыт работы компании<br> на рынке недвижимости</p>
-
-                <h3 class="table__title">9 000 000 кв.м</h3>
-                <p class="table__text">недвижимости реализовано<br> с нашей помощью</p>
-
-                <h3 class="table__title">свыше 80</h3>
-                <p class="table__text">агенств недвижимости<br> сотрудничает с нами</p>
-
+            <ul class="about__table">
+                <li>
+                    <h3 class="table__title">10 лет</h3>
+                    <p class="table__text">опыт работы компании<br> на рынке недвижимости</p>
+                </li>
+                <li>
+                    <h3 class="table__title">9 000 000 кв.м</h3>
+                    <p class="table__text">недвижимости реализовано<br> с нашей помощью</p>
+                </li>
+                <li>
+                    <h3 class="table__title">свыше 80</h3>
+                    <p class="table__text">агенств недвижимости<br> сотрудничает с нами</p>
+                </li>
                 <!-- ADD 3 ITEMS MORE -->
-            </div>
+            </ul>
         </section>
 
         <!-- /ABOUT -->
@@ -122,59 +128,73 @@
 
             <div class="features">
                 <h2 class="features__title">ПОЧЕМУ ВЫБИРАЮТ ИМЕННО НАС:</h2>
-                <h3 class="features__subtitle">Все вопросы по поиску и аренде жилья Вы можете решить с нами.
-
+                <h3 class="features__subtitle">Все вопросы по поиску и аренде жилья Вы можете решить с нами. <br>
+                    <br>
                     Для этого мы предлагаем и гарантируем:</h3>
                 <ul class="features__list">
                     <li class="features__item">
-                        <img src="img/advantages1.svg" alt="">
-                        <div class="text">
-                            <h3>БЕЗОПАСНЫЕ СДЕЛКИ</h3>
-                            <p>Юридическая поддержка<br>
-                                клиентов при сделках<br>
-                                с недвижимостью</p>
+                        <div><img src="img/svg/feature-1.svg" alt=""></div>
+                        <div class="features__text">
+                            <h3>ОПЕРАТИВНОСТЬ</h3>
+                            <p>Наша автоматическая система уведомлений клиентов гарантирует отправку предложения в
+                                течение
+                                часа с момента его обработки. </p>
                         </div>
                     </li>
                     <li class="features__item">
-                        <img src="img/advantages2.svg" alt="">
-                        <h3>ВСЕСТОРОННЯЯ ПОДДЕРЖКА</h3>
-                        <p>Сопровождение и помощь<br>
-                            на всех этапах нашего<br> сотрудничества</p>
-                    </li>
-                    <li class="features__item">
-                        <img src="img/advantages3.svg" alt="">
-                        <h3>ПРАВИЛЬНАЯ РЕКЛАМА</h3>
-                        <p>Знаем всё о недвижимости,<br>
-                            умеем правильно и своевременно<br>
-                            ее представить</p>
-                    </li>
-                    <li class="features__item">
-                        <img src="img/advantages1.svg" alt="">
-                        <div class="text">
-                            <h3>БЕЗОПАСНЫЕ СДЕЛКИ</h3>
-                            <p>Юридическая поддержка<br>
-                                клиентов при сделках<br>
-                                с недвижимостью</p>
+                        <div><img src="img/svg/feature-2.svg" alt=""></div>
+                        <div class="features__text">
+                            <h3>АКТУАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</h3>
+                            <p>Мы постоянно обновляем нашу базу по аренде недвижимости. И пристально следим за
+                                качеством
+                                каждого отправленного предложения.</p>
                         </div>
                     </li>
                     <li class="features__item">
-                        <img src="img/advantages2.svg" alt="">
-                        <h3>ВСЕСТОРОННЯЯ ПОДДЕРЖКА</h3>
-                        <p>Сопровождение и помощь<br>
-                            на всех этапах нашего<br> сотрудничества</p>
+                        <div><img src="img/svg/feature-3.svg" alt=""></div>
+                        <div class="features__text">
+                            <h3>ИНДИВИДУАЛЬНЫЙ ПОДХОД</h3>
+                            <p>Для каждого клиента мы всегда составляем индивидуальные подборки предложений исходя из
+                                его
+                                потребностей и финансовых возможностей.</p>
+                        </div>
                     </li>
                     <li class="features__item">
-                        <img src="img/advantages3.svg" alt="">
-                        <h3>ПРАВИЛЬНАЯ РЕКЛАМА</h3>
-                        <p>Знаем всё о недвижимости,<br>
-                            умеем правильно и своевременно<br>
-                            ее представить</p>
+                        <div><img src="img/svg/feature-4.svg" alt=""></div>
+
+                        <div class="features__text">
+                            <h3>УДОБСТВО В ОФОРМЛЕНИИ</h3>
+                            <p>Заключить и оплатить наши услуги можно в режиме онлайн, без лишних документов и прочей
+                                бюрократической волокиты.</p>
+                        </div>
+
+                    </li>
+                    <li class="features__item">
+                        <div><img src="img/svg/feature-5.svg" alt=""></div>
+                        <div class="features__text">
+                            <h3>ВНИМАТЕЛЬНОСТЬ К КАЖДОМУ КЛИЕНТУ</h3>
+                            <p>Если вам нужна дополнительная консультация, не стесняйтесь обратиться в наш call-центр.
+                                Наши
+                                специалисты 7 дней в неделю готовы ответить на любые вопросы, касающиеся аренды жилья.</p>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div><img src="img/svg/feature-6.svg" alt=""></div>
+                        <div class="features__text">
+                            <h3>БЮДЖЕТНЫЕ РЕШЕНИЯ</h3>
+                            <p>Для тех, кто не хочет переплачивать за евроремонт мы подберем помещения по более
+                                демократичным ценам и по возможности обсудим уменьшение или полную отмену
+                                обеспечительного
+                                депозита.</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
 
         <!-- /ADVANTAGES -->
+
+        <div class="rect1"></div>
 
         <!-- BANNER -->
         <section class="banner">
@@ -187,29 +207,28 @@
 
         <!-- /BANNER -->
 
+        <div class="rect2"></div>
+
         <!-- FEEDBACK -->
 
         <section class="feedback">
             <div class="feedback__form">
-                <h2>ВЫ МОЖЕТЕ ОСТАВИТЬ ОТЗЫВ</h2>
-                <table class="tab2" id="r_send_table" style="margin: 40px auto 12px auto">
-                    <tbody>
-                        <tr>
+                <h2 class="form__title">ВЫ МОЖЕТЕ ОСТАВИТЬ ОТЗЫВ</h2>
+                <table id="send_table" style="margin: 40px auto 12px auto">
+                        <tr class="form__table">
                             <td>
-                                <p><input id="r_name" type="text" style="width: 426px" placeholder="Ваше имя"></p>
-                                <p><input id="r_client_phone" type="text" style="width: 426px" placeholder="Ваш телефон"></p>
-                                <p><input id="r_email" type="text" style="width: 426px" placeholder="Номер договора"></p>
+                                <input class="table__col1" name="name" id="r_name" type="text" placeholder="Ваше имя">
+                                <input class="table__col1" id="r_client_phone" type="tel"  placeholder="Ваш телефон">
+                                <input class="table__col1" id="r_email" type="text"  placeholder="Номер договора">
                             </td>
-                            <td style="padding-left: 23px"><textarea id="r_text" style="width: 426px; height: 7.25em; box-sizing: border-box"
-                                    placeholder="Текст отзыва"></textarea></td>
+                            <td><textarea  class="table__col2" id="r_text" placeholder="Текст отзыва"></textarea></td>
                         </tr>
-                    </tbody>
                 </table>
-                <button class="feedback__send button--small">Отправить</button>
+                <button class="feedback__button button--small">Отправить</button>
             </div>
 
-            <div>
-                <h2>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+            <div class="feedback__container">
+                <h2 class="feedback__title">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
                 <ul class="feedback__items">
                     <li class="feedback__item">
                         <h4>Ирина</h4>
@@ -242,7 +261,7 @@
                         </p>
                     </li> -->
                 </ul>
-                <button class="feedback__more button--small">Показать еще</button>
+                <button class="feedback__button button--small">Показать еще</button>
             </div>
 
             <hr align="center" width=70% size="2" color="#A7DF80" />
@@ -250,25 +269,24 @@
             <div class="partners">
                 <h2 class="partners__title">АГЕНСТВА-ПАРТНЕРЫ</h2>
                 <div class="partners__logo">
-                    <img class="partners__img" src="img/novosel-logo1.png" alt="">
-                    <img class="partners__img" src="img/nahodka-logo.png" alt="">
-                    <img class="partners__img" src="img/etaji-logo.png" alt="">
-                    <img class="partners__img" src="img/mk-logo.png" alt="">
-                    <img class="partners__img" src="img/novosel-logo1.png" alt="">
-                    <img class="partners__img" src="img/nahodka-logo.png" alt="">
-                    <img class="partners__img" src="img/etaji-logo.png" alt="">
-                    <img class="partners__img" src="img/mk-logo.png" alt="">
-                    <img class="partners__img" src="img/novosel-logo1.png" alt="">
-                    <img class="partners__img" src="img/nahodka-logo.png" alt="">
-                    <img class="partners__img" src="img/etaji-logo.png" alt="">
-                    <img class="partners__img" src="img/mk-logo.png" alt="">
-                    <img class="partners__img" src="img/novosel-logo1.png" alt="">
-                    <img class="partners__img" src="img/nahodka-logo.png" alt="">
-                    <img class="partners__img" src="img/etaji-logo.png" alt="">
-                    <img class="partners__img" src="img/mk-logo.png" alt="">
-                    <img class="partners__img" src="img/nahodka-logo.png" alt="">
-                    <img class="partners__img" src="img/etaji-logo.png" alt="">
-                    <img class="partners__img" src="img/mk-logo.png" alt="">
+                    <img class="partners__img" src="img/png/part (1).png" alt="">
+                    <img class="partners__img" src="img/png/part (2).png" alt="">
+                    <img class="partners__img" src="img/png/part (3).png" alt="">
+                    <img class="partners__img" src="img/png/part (4).png" alt="">
+                    <img class="partners__img" src="img/png/part (5).png" alt="">
+                    <img class="partners__img" src="img/png/part (6).png" alt="">
+                    <img class="partners__img" src="img/png/part (7).png" alt="">
+                    <img class="partners__img" src="img/png/part (8).png" alt="">
+                    <img class="partners__img" src="img/png/part (9).png" alt="">
+                    <img class="partners__img" src="img/png/part (10).png" alt="">
+                    <img class="partners__img" src="img/png/part (11).png" alt="">
+                    <img class="partners__img" src="img/png/part (12).png" alt="">
+                    <img class="partners__img" src="img/png/part (13).png" alt="">
+                    <img class="partners__img" src="img/png/part (14).png" alt="">
+                    <img class="partners__img" src="img/png/part (15).png" alt="">
+                    <img class="partners__img" src="img/png/part (16).png" alt="">
+                    <img class="partners__img" src="img/png/part (17).png" alt="">
+                    <img class="partners__img" src="img/png/part (18).png" alt="">
                 </div>
             </div>
         </section>
@@ -287,13 +305,15 @@
                 <p class="contract__text">Для тех кто предпочитает не тратить свое время на поездки в офис у нас
                     появилась функция оплаты
                     доступа
-                    к информационной базе в режиме онлайн.<br>Вся процедура производится в два клика прямо на сайте.</p>
+                    к информационной базе в режиме онлайн.<br><br>Вся процедура производится в два клика прямо на сайте.</p>
 
                 <a href="#modal-contract" class="contract__button button">Заключить договор</a>
             </div>
         </section>
 
         <!-- /CONTRACT -->
+
+        <div class="rect2"></div>
 
         <!-- CONTACTS -->
         <section class="contacts">
@@ -305,28 +325,28 @@
                 </div>
                 <div class="social">
                     <ul class="social__items">
-                        <li>WhatsApp</li>
-                        <li>Telegram</li>
-                        <li>Viber</li>
+                        <li><a class="social__link" href="https://wa.me/****">WhatsApp<img src="img/svg/whatsapp.svg"></a></li>
+                        <li><a class="social__link" href="https://t.me//****">Telegram<img src="img/svg/telegram.svg"></a></li>
+                        <li><a class="social__link" href="viber://add?number=****">Viber<img src="img/svg/viber.svg"></a></li>
                     </ul>
                 </div>
                 <div class="mail">
                     <ul class="mail__items">
-                        <li>Служба поддержки: <span class="mail__link">help@skarn.ru</span></li>
-                        <li>Бухгалтерия: <span class="mail__link">buh@skarn.ru</span></li>
-                        <li>Юридический отдел: <span class="mail__link">conf@skarn.ru</span></li>
+                        <li>Служба поддержки: <a href="mailto:help@skarn.ru" class="mail__link">help@skarn.ru</a></li>
+                        <li>Бухгалтерия: <a href="mailto:buh@skarn.ru" class="mail__link">buh@skarn.ru</a></li>
+                        <li>Юридический отдел: <a href="mailto:conf@skarn.ru" class="mail__link">conf@skarn.ru</a></li>
                     </ul>
                 </div>
                 <div class="time">
                     <ul class="time__items">
-                        <li>Время работы службы поддержки:
-                            <span class="time__"> ежедневно, 08:00 – 20:00 по мск.</span></li>
-                        <li>График работы компании:
-                            <span class="time__"> пн – пт, 08:00 – 17:00 по мск.</span></li>
+                        <li>Время работы службы поддержки: <br>
+                            <span class="time__b"> ежедневно, 08:00 – 20:00 по мск.</span></li>
+                        <li>График работы компании: <br>
+                            <span class="time__b"> пн – пт, 08:00 – 17:00 по мск.</span></li>
                     </ul>
                 </div>
             </div>
-            <h3>ОТПРАВИТЬ СООБЩЕНИЕ ДИРЕКТОРУ</h3>
+            <h3 class="message__title">ОТПРАВИТЬ СООБЩЕНИЕ ДИРЕКТОРУ</h3>
             <div>
                 <form>
                     <div>
@@ -337,7 +357,7 @@
                             <input name="message" placeholder="Текст сообщения">
                         </div>
                     </div>
-                    <div><input type="submit" class="button" value="Оставить заявку"></div>
+                    <div><input type="submit" class="button--small" value="Отправить"></div>
                 </form>
             </div>
             <div class="contacts__tab">
