@@ -504,7 +504,24 @@ header {
     margin: 0 auto;
     text-align: center;
 }
-
+.partners__logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.partners__img {
+    transition-duration: .5s;
+}
+.sr {
+    background: url("img/svg/partners/sr.svg");
+    display: block; 
+    width: 110px;
+    height: 84px;
+    transition-duration: .5s;
+    }
+.sr:hover {
+    background: url("img/svg/partners/sr--.svg");
+}
 /* /FEEDBACK */
 
 /* CONTRACT */
