@@ -17,13 +17,14 @@
     <header id="header" class="header">
         <h1 class="visually-hidden">Сервис комплексной аналитики рынка недвижимости </h1>
         <div class="header__container">
-            <!-- <div> --><div class="menu__title">МЕНЮ</div>
-                <nav class="menu menu--closed menu--nojs">
-                        
+            <!-- <div> -->
+            <div class="menu__title">МЕНЮ</div>
+            <nav class="menu menu--closed menu--nojs">
 
-                    <button class="menu__toggle" type="button" title="Открыть меню"></button>
-                    <div class="menu__wrapper">
-                        <!-- <ul class="menu__items">
+
+                <button class="menu__toggle" type="button" title="Открыть меню"></button>
+                <div class="menu__wrapper">
+                    <!-- <ul class="menu__items">
                     <li class="menu__item menu__item--active"><a href="#about">О компании</a></li>
                     <li class="menu__item"><a href="#advantages">Преимущества</a></li>
                     <li class="menu__item"><a href="#feedback">Отзывы</a></li>
@@ -32,8 +33,8 @@
                     <li class="menu__item"><a href="#***">Сдача жилья</a></li>
                     <li class="menu__item menu__login"><a href="#***">личный кабинет</a></li>
                 </ul> -->
-                    </div>
-                </nav>
+                </div>
+            </nav>
             <!-- </div> -->
             <div class="header__logo">
                 <a href="./index.html"><img src="img/svg/logo.svg" alt="СКАРН"></a>
@@ -60,9 +61,9 @@
 
         <section class="info">
             <div class="info__container">
-            <h2 class="info__title">НАЙМ ЖИЛЬЯ БЕЗ ПОСРЕДНИКОВ</h2>
+                <h2 class="info__title">НАЙМ ЖИЛЬЯ БЕЗ ПОСРЕДНИКОВ</h2>
 
-                    <ul class="info__list">
+                <ul class="info__list">
                     <li class="info__item">быстро найдем наиболее подходящее для Вас предложение</li>
 
                     <li class="info__item">заселение с нами надежно и безопасно, более 4500 новых предложений
@@ -214,15 +215,15 @@
         <section class="feedback">
             <div class="feedback__form">
                 <h2 class="form__title">ВЫ МОЖЕТЕ ОСТАВИТЬ ОТЗЫВ</h2>
-                <table id="send_table" style="margin: 40px auto 12px auto">
-                        <tr class="form__table">
-                            <td>
-                                <input class="table__col1" name="name" id="r_name" type="text" placeholder="Ваше имя">
-                                <input class="table__col1" id="r_client_phone" type="tel"  placeholder="Ваш телефон">
-                                <input class="table__col1" id="r_email" type="text"  placeholder="Номер договора">
-                            </td>
-                            <td><textarea  class="table__col2" id="r_text" placeholder="Текст отзыва"></textarea></td>
-                        </tr>
+                <table id="send_table">
+                    <tr class="form__table">
+                        <td>
+                            <input class="table__col1" name="name" id="r_name" type="text" placeholder="Ваше имя">
+                            <input class="table__col1" id="r_client_phone" type="tel" placeholder="Ваш телефон">
+                            <input class="table__col1" id="r_email" type="text" placeholder="Номер договора">
+                        </td>
+                        <td><textarea class="table__col2" id="r_text" placeholder="Текст отзыва"></textarea></td>
+                    </tr>
                 </table>
                 <button class="feedback__button button--small">Отправить</button>
             </div>
@@ -305,7 +306,8 @@
                 <p class="contract__text">Для тех кто предпочитает не тратить свое время на поездки в офис у нас
                     появилась функция оплаты
                     доступа
-                    к информационной базе в режиме онлайн.<br><br>Вся процедура производится в два клика прямо на сайте.</p>
+                    к информационной базе в режиме онлайн.<br><br>Вся процедура производится в два клика прямо на
+                    сайте.</p>
 
                 <a href="#modal-contract" class="contract__button button">Заключить договор</a>
             </div>
@@ -337,6 +339,7 @@
                         <li>Юридический отдел: <a href="mailto:conf@skarn.ru" class="mail__link">conf@skarn.ru</a></li>
                     </ul>
                 </div>
+                <div class="line-break"></div>
                 <div class="time">
                     <ul class="time__items">
                         <li>Время работы службы поддержки: <br>
@@ -347,19 +350,31 @@
                 </div>
             </div>
             <h3 class="message__title">ОТПРАВИТЬ СООБЩЕНИЕ ДИРЕКТОРУ</h3>
-            <div>
-                <form>
+            <div class="message__form">
+                <table id="message_table">
+                    <tr class="form__table">
+                        <td>
+                            <input class="table__col1" name="name" id="r_name" type="text" placeholder="Ваше имя">
+                            <input class="table__col1" id="phone" type="tel" placeholder="Ваш телефон">
+                            <input class="table__col1" id="email" type="text" placeholder="Номер договора">
+                        </td>
+                        <td><textarea class="table__col2" id="r_text" placeholder="Текст сообщения"></textarea></td>
+                    </tr>
+                </table>
+                <button class="message__button button--small">Отправить</button>
+            </div>
+            <!-- <div>
+                            <form>
                     <div>
-                        <div> <input name="name" class="__name" placeholder="Ваше имя" value="">
+                        <div><input name="name" class="__name" placeholder="Ваше имя" value="">
                             <input name="phone" class="__phone" placeholder="Ваш телефон">
                             <input name="contract" class="__contract" placeholder="Номер договора"> </div>
                         <div>
                             <input name="message" placeholder="Текст сообщения">
                         </div>
                     </div>
-                    <div><input type="submit" class="button--small" value="Отправить"></div>
                 </form>
-            </div>
+            </div> -->
             <div class="contacts__tab">
                 <div class="tab__titles">
                     <div class="tab__title">СПРАВКА</div>
@@ -389,23 +404,22 @@
                     </ul>
                 </div>
             </div>
-
         </section>
-
         <div class="rect2"></div>
-
     </main>
 
     <!-- FOOTER -->
 
     <footer class="footer container">
-        <div class="footer__copyright">© 2011-2019. Все права защищены.
+        <div class="footer__copyright">© 2011-2019. Все права защищены.<br>
             <a class="footer__policy" href="#policy">Политика конфиденциальности</a></div>
         <div class="footer__logo">
-            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <a href="index.html"><img src="img/svg/logo-footer.svg" alt="logo"></a>
         </div>
-        <div class="footer__phone"><a href="#callback">8-800-800-8080</a></div>
-        <div class="footer__logopay"><img src="img/logopay.png"></img></div>
+        <div class="footer__right">
+            <a class="footer__phone" href="#callback">8-800-800-8080</a>
+            <div class="footer__logopay"><img src="img/png/logopay.png"></img></div>
+        </div>
     </footer>
 
     <!-- FOOTER -->
