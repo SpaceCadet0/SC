@@ -986,7 +986,9 @@ footer {
     .menu__toggle:active {
         background: url("img/svg/menu-m--.svg") no-repeat center;
     }
-
+    .header__user-items {
+        right: 10px;
+    }
     .info {
         max-height: 700px;
     }
