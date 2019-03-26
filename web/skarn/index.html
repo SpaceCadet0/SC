@@ -17,31 +17,28 @@
     <header id="header" class="header">
         <h1 class="visually-hidden">Сервис комплексной аналитики рынка недвижимости </h1>
         <div class="header__container">
-            <!-- <div> --><div class="menu__title">МЕНЮ</div>
-                <nav class="menu menu--closed menu--nojs">
-                        
-
-                    <button class="menu__toggle" type="button" title="Открыть меню"></button>
-                    <div class="menu__wrapper">
-                        <!-- <ul class="menu__items">
-                    <li class="menu__item menu__item--active"><a href="#about">О компании</a></li>
-                    <li class="menu__item"><a href="#advantages">Преимущества</a></li>
-                    <li class="menu__item"><a href="#feedback">Отзывы</a></li>
-                    <li class="menu__item"><a href="#contacts">Контакты</a></li>
-                    <li class="menu__item"><a href="#contract">Оплата</a></li>
-                    <li class="menu__item"><a href="#***">Сдача жилья</a></li>
-                    <li class="menu__item menu__login"><a href="#***">личный кабинет</a></li>
-                </ul> -->
-                    </div>
-                </nav>
+            <nav class="menu menu--closed menu--nojs">
+                <button class="menu__toggle" type="button" title="Открыть меню"></button>
+                <div class="menu__wrapper">
+                    <ul class="menu__items">
+                        <li class="menu__item"><a href="#about">О компании</a></li>
+                        <li class="menu__item"><a href="#advantages">Преимущества</a></li>
+                        <li class="menu__item"><a href="#feedback">Отзывы</a></li>
+                        <li class="menu__item"><a href="#contacts">Контакты</a></li>
+                        <li class="menu__item"><a href="#contract">Оплата</a></li>
+                        <li class="menu__item"><a href="#***">Сдача жилья</a></li>
+                        <li class="menu__item"><a class="menu__login" href="#***" title="Войти">личный кабинет</a></li>
+                    </ul>
+                </div>
+            </nav>
             <!-- </div> -->
             <div class="header__logo">
-                <a href="./index.html"><img src="img/svg/logo.svg" alt="СКАРН"></a>
+                <a href="./index.html"></a>
             </div>
             <div class="header__user-items">
                 <ul>
                     <li class="header__phone">
-                        <a href="#regions" data-title='Обратный звонок'>8-888-888-8888</a>
+                        <a href="#regions">8-888-888-8888</a>
                     </li>
                     <!-- <li class="header__login">
                     <a href="#login">личный кабинет</a>
@@ -60,9 +57,9 @@
 
         <section class="info">
             <div class="info__container">
-            <h2 class="info__title">НАЙМ ЖИЛЬЯ БЕЗ ПОСРЕДНИКОВ</h2>
+                <h2 class="info__title">НАЙМ ЖИЛЬЯ БЕЗ ПОСРЕДНИКОВ</h2>
 
-                    <ul class="info__list">
+                <ul class="info__list">
                     <li class="info__item">быстро найдем наиболее подходящее для Вас предложение</li>
 
                     <li class="info__item">заселение с нами надежно и безопасно, более 4500 новых предложений
@@ -100,15 +97,17 @@
                 </p>
             </div>
             <ul class="about__table">
-                <li>
+                <li class="table__first">
                     <h3 class="table__title">10 лет</h3>
                     <p class="table__text">опыт работы компании<br> на рынке недвижимости</p>
                 </li>
-                <li>
-                    <h3 class="table__title">9 000 000 кв.м</h3>
-                    <p class="table__text">недвижимости реализовано<br> с нашей помощью</p>
+                <li class="table__middle">
+                    <div>
+                        <h3 class="table__title">9 000 000 кв.м</h3>
+                        <p class="table__text">недвижимости реализовано<br> с нашей помощью</p>
+                    </div>
                 </li>
-                <li>
+                <li class="table__last">
                     <h3 class="table__title">свыше 80</h3>
                     <p class="table__text">агенств недвижимости<br> сотрудничает с нами</p>
                 </li>
@@ -133,7 +132,7 @@
                     Для этого мы предлагаем и гарантируем:</h3>
                 <ul class="features__list">
                     <li class="features__item">
-                        <div><img src="img/svg/feature-1.svg" alt=""></div>
+                        <div class="features__pic"><img src="img/svg/feature-1.svg" alt=""></div>
                         <div class="features__text">
                             <h3>ОПЕРАТИВНОСТЬ</h3>
                             <p>Наша автоматическая система уведомлений клиентов гарантирует отправку предложения в
@@ -142,7 +141,7 @@
                         </div>
                     </li>
                     <li class="features__item">
-                        <div><img src="img/svg/feature-2.svg" alt=""></div>
+                        <div class="features__pic"><img src="img/svg/feature-2.svg" alt=""></div>
                         <div class="features__text">
                             <h3>АКТУАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</h3>
                             <p>Мы постоянно обновляем нашу базу по аренде недвижимости. И пристально следим за
@@ -151,7 +150,7 @@
                         </div>
                     </li>
                     <li class="features__item">
-                        <div><img src="img/svg/feature-3.svg" alt=""></div>
+                        <div class="features__pic"><img src="img/svg/feature-3.svg" alt=""></div>
                         <div class="features__text">
                             <h3>ИНДИВИДУАЛЬНЫЙ ПОДХОД</h3>
                             <p>Для каждого клиента мы всегда составляем индивидуальные подборки предложений исходя из
@@ -160,7 +159,7 @@
                         </div>
                     </li>
                     <li class="features__item">
-                        <div><img src="img/svg/feature-4.svg" alt=""></div>
+                        <div class="features__pic"><img src="img/svg/feature-4.svg" alt=""></div>
 
                         <div class="features__text">
                             <h3>УДОБСТВО В ОФОРМЛЕНИИ</h3>
@@ -170,7 +169,7 @@
 
                     </li>
                     <li class="features__item">
-                        <div><img src="img/svg/feature-5.svg" alt=""></div>
+                        <div class="features__pic"><img src="img/svg/feature-5.svg" alt=""></div>
                         <div class="features__text">
                             <h3>ВНИМАТЕЛЬНОСТЬ К КАЖДОМУ КЛИЕНТУ</h3>
                             <p>Если вам нужна дополнительная консультация, не стесняйтесь обратиться в наш call-центр.
@@ -179,7 +178,7 @@
                         </div>
                     </li>
                     <li class="features__item">
-                        <div><img src="img/svg/feature-6.svg" alt=""></div>
+                        <div class="features__pic"><img src="img/svg/feature-6.svg" alt=""></div>
                         <div class="features__text">
                             <h3>БЮДЖЕТНЫЕ РЕШЕНИЯ</h3>
                             <p>Для тех, кто не хочет переплачивать за евроремонт мы подберем помещения по более
@@ -211,18 +210,18 @@
 
         <!-- FEEDBACK -->
 
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <div class="feedback__form">
                 <h2 class="form__title">ВЫ МОЖЕТЕ ОСТАВИТЬ ОТЗЫВ</h2>
-                <table id="send_table" style="margin: 40px auto 12px auto">
-                        <tr class="form__table">
-                            <td>
-                                <input class="table__col1" name="name" id="r_name" type="text" placeholder="Ваше имя">
-                                <input class="table__col1" id="r_client_phone" type="tel"  placeholder="Ваш телефон">
-                                <input class="table__col1" id="r_email" type="text"  placeholder="Номер договора">
-                            </td>
-                            <td><textarea  class="table__col2" id="r_text" placeholder="Текст отзыва"></textarea></td>
-                        </tr>
+                <table id="send_table">
+                    <tr class="form__table">
+                        <td>
+                            <input class="table__col1" name="name" id="r_name" type="text" placeholder="Ваше имя">
+                            <input class="table__col1" id="r_client_phone" type="tel" placeholder="Ваш телефон">
+                            <input class="table__col1" id="r_email" type="text" placeholder="Номер договора">
+                        </td>
+                        <td><textarea class="table__col2" id="r_text" placeholder="Текст отзыва"></textarea></td>
+                    </tr>
                 </table>
                 <button class="feedback__button button--small">Отправить</button>
             </div>
@@ -231,7 +230,7 @@
                 <h2 class="feedback__title">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
                 <ul class="feedback__items">
                     <li class="feedback__item">
-                        <h4>Ирина</h4>
+                        <h4>Ирина - 21.12.2018</h4>
                         <p>Всем советую обращаться к Риэлтору с большой буквы: Андрейчук Ирине! Когда я к ней
                             обратилась,
                             уже долгое время продавала свою квартиру безуспешно. Быстро вникнув в мою ситуацию, Ирина
@@ -241,7 +240,7 @@
 
                     </li>
                     <li class="feedback__item">
-                        <h4>Ольга Алексеевна</h4>
+                        <h4>Ольга Алексеевна - 11.02.2019</h4>
                         <p>
                             В агенство недвижимости "Дом недвижимости" обратилась в связи с возникшей необходимости в
                             продаже комнаты. Услуга была оказана очень профессионально. Галина Михайловна
@@ -250,16 +249,51 @@
                             к Черкашиной Галине Михайловне.
                         </p>
                     </li>
-                    <!-- <li class="feedback__item">
-                        <h4>Виктор Иванович</h4>
-                        <p>
-                            В начале этого года я решил на накопленные средства купить квартиру в Екатеринбурге
-                            и обратился к сотруднику агентства Дом Недвижимости Бахтовой Наталье Валентиновне. Наталья
-                            Валентиновна очень ответственно подошла к делу, и я хочу выразить огромную благодарность ей
-                            за
-                            высокий профессионализм и внимательность.
-                        </p>
-                    </li> -->
+                    <li class="feedback__item hide">
+                            <h4>Ирина - 21.12.2018</h4>
+                            <p>Всем советую обращаться к Риэлтору с большой буквы: Андрейчук Ирине! Когда я к ней
+                                обратилась,
+                                уже долгое время продавала свою квартиру безуспешно. Быстро вникнув в мою ситуацию, Ирина
+                                очень
+                                оперативно начала работать в направлении продажи моей квартиры.
+                                Всем советую обращаться к Риэлтору с большой буквы: Андрейчук Ирине! Когда я к ней
+                                обратилась,
+                                уже долгое время продавала свою квартиру безуспешно. Быстро вникнув в мою ситуацию, Ирина
+                                очень
+                                оперативно начала работать в направлении продажи моей квартиры.
+                            </p>
+    
+                        </li>
+                        <li class="feedback__item hide">
+                            <h4>Ольга Алексеевна - 11.02.2019</h4>
+                            <p>
+                                В агенство недвижимости "Дом недвижимости" обратилась в связи с возникшей необходимости в
+                                продаже комнаты. Услуга была оказана очень профессионально. Галина Михайловна
+                                в короткие сроки провела сделку по продаже.
+                                У меня сформировалось высокое доверие
+                                к Черкашиной Галине Михайловне.
+                            </p>
+                        </li>
+                        <li class="feedback__item hide">
+                                <h4>Ольга Алексеевна - 11.02.2019</h4>
+                                <p>
+                                    В агенство недвижимости "Дом недвижимости" обратилась в связи с возникшей необходимости в
+                                    продаже комнаты. Услуга была оказана очень профессионально. Галина Михайловна
+                                    в короткие сроки провела сделку по продаже.
+                                    У меня сформировалось высокое доверие
+                                    к Черкашиной Галине Михайловне.
+                                </p>
+                            </li>
+                            <li class="feedback__item hide">
+                                    <h4>Ольга Алексеевна - 11.02.2019</h4>
+                                    <p>
+                                        В агенство недвижимости "Дом недвижимости" обратилась в связи с возникшей необходимости в
+                                        продаже комнаты. Услуга была оказана очень профессионально. Галина Михайловна
+                                        в короткие сроки провела сделку по продаже.
+                                        У меня сформировалось высокое доверие
+                                        к Черкашиной Галине Михайловне.
+                                    </p>
+                                </li>
                 </ul>
                 <button class="feedback__button button--small">Показать еще</button>
             </div>
@@ -269,24 +303,26 @@
             <div class="partners">
                 <h2 class="partners__title">АГЕНСТВА-ПАРТНЕРЫ</h2>
                 <div class="partners__logo">
-                    <img class="partners__img" src="img/png/part (1).png" alt="">
-                    <img class="partners__img" src="img/png/part (2).png" alt="">
-                    <img class="partners__img" src="img/png/part (3).png" alt="">
-                    <img class="partners__img" src="img/png/part (4).png" alt="">
-                    <img class="partners__img" src="img/png/part (5).png" alt="">
-                    <img class="partners__img" src="img/png/part (6).png" alt="">
-                    <img class="partners__img" src="img/png/part (7).png" alt="">
-                    <img class="partners__img" src="img/png/part (8).png" alt="">
-                    <img class="partners__img" src="img/png/part (9).png" alt="">
-                    <img class="partners__img" src="img/png/part (10).png" alt="">
-                    <img class="partners__img" src="img/png/part (11).png" alt="">
-                    <img class="partners__img" src="img/png/part (12).png" alt="">
-                    <img class="partners__img" src="img/png/part (13).png" alt="">
-                    <img class="partners__img" src="img/png/part (14).png" alt="">
-                    <img class="partners__img" src="img/png/part (15).png" alt="">
-                    <img class="partners__img" src="img/png/part (16).png" alt="">
-                    <img class="partners__img" src="img/png/part (17).png" alt="">
-                    <img class="partners__img" src="img/png/part (18).png" alt="">
+                    <div><a href="****" class="sr"></a></div>
+                    <div><a href="****" class="yn"></a></div>
+                    <div><a href="****" class="irr"></a></div>
+                    <div><a href="****" class="rr"></a></div>
+                    <div><a href="****" class="nii"></a></div>
+                    <div><a href="****" class="hh"></a></div>
+                    <div class="line-break"></div>
+                    <div><a href="****" class="sb"></a></div>
+                    <div><a href="****" class="skb"></a></div>
+                    <div><a href="****" class="pr"></a></div>
+                    <div><a href="****" class="tu"></a></div>
+                    <div><a href="****" class="rjd"></a></div>
+                    <div><a href="****" class="yo"></a></div>
+                    <div class="line-break"></div>
+                    <div><a href="****" class="ya"></a></div>
+                    <div><a href="****" class="ma"></a></div>
+                    <div><a href="****" class="rt"></a></div>
+                    <div><a href="****" class="me"></a></div>
+                    <div><a href="****" class="mts"></a></div>
+                    <div><a href="****" class="be"></a></div>
                 </div>
             </div>
         </section>
@@ -305,7 +341,8 @@
                 <p class="contract__text">Для тех кто предпочитает не тратить свое время на поездки в офис у нас
                     появилась функция оплаты
                     доступа
-                    к информационной базе в режиме онлайн.<br><br>Вся процедура производится в два клика прямо на сайте.</p>
+                    к информационной базе в режиме онлайн.<br><br>Вся процедура производится в два клика прямо на
+                    сайте.</p>
 
                 <a href="#modal-contract" class="contract__button button">Заключить договор</a>
             </div>
@@ -316,7 +353,7 @@
         <div class="rect2"></div>
 
         <!-- CONTACTS -->
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <h2 class="contacts__title">КОНТАКТЫ</h2>
             <div class="contacts__data">
                 <div class="support">
@@ -337,6 +374,7 @@
                         <li>Юридический отдел: <a href="mailto:conf@skarn.ru" class="mail__link">conf@skarn.ru</a></li>
                     </ul>
                 </div>
+                <div class="line-break"></div>
                 <div class="time">
                     <ul class="time__items">
                         <li>Время работы службы поддержки: <br>
@@ -347,26 +385,38 @@
                 </div>
             </div>
             <h3 class="message__title">ОТПРАВИТЬ СООБЩЕНИЕ ДИРЕКТОРУ</h3>
-            <div>
-                <form>
+            <div class="message__form">
+                <table id="message_table">
+                    <tr class="form__table">
+                        <td>
+                            <input class="table__col1" name="name" id="r_name" type="text" placeholder="Ваше имя">
+                            <input class="table__col1" id="phone" type="tel" placeholder="Ваш телефон">
+                            <input class="table__col1" id="email" type="text" placeholder="Номер договора">
+                        </td>
+                        <td><textarea class="table__col2" id="r_text" placeholder="Текст сообщения"></textarea></td>
+                    </tr>
+                </table>
+                <button class="message__button button--small">Отправить</button>
+            </div>
+            <!-- <div>
+                            <form>
                     <div>
-                        <div> <input name="name" class="__name" placeholder="Ваше имя" value="">
+                        <div><input name="name" class="__name" placeholder="Ваше имя" value="">
                             <input name="phone" class="__phone" placeholder="Ваш телефон">
                             <input name="contract" class="__contract" placeholder="Номер договора"> </div>
                         <div>
                             <input name="message" placeholder="Текст сообщения">
                         </div>
                     </div>
-                    <div><input type="submit" class="button--small" value="Отправить"></div>
                 </form>
-            </div>
-            <div class="contacts__tab">
-                <div class="tab__titles">
-                    <div class="tab__title">СПРАВКА</div>
-                    <div class="tab__title">АВТОРИЗАЦИЯ</div>
-                    <div class="tab__title">ЗАГОЛОВОК-3</div>
-                </div>
-                <div class="tab_panel">
+            </div> -->
+            <hr align="center" width=65% size="2" color="#A7DF80" />
+
+            <div id="tabs">
+                <div class="tab__title tab__title--active">СПРАВКА</div>
+                <div class="tab__title">АВТОРИЗАЦИЯ</div>
+                <div class="tab__title">ЗАГОЛОВОК-3</div>
+                <div class="tab__panel">
                     <ul class="tab__list">
                         <li class="tab__item">Для корректной обработки обращения клиенту необходимо сообщить номер
                             договора, адрес
@@ -388,24 +438,63 @@
                             контактный номер телефона.</li>
                     </ul>
                 </div>
+                <div class="tab__panel">
+                    После оплаты услуги по подбору жилья Вам пришло смс сообщение, в котором указана ссылка на наш сайт
+                    – skarn.ru, а так же Логин (Ваш номер телефона – вводить на сайте без 8) и Пароль – 6 цифр. <br>
+                    1. Для того чтобы зайти на сайт, Вам необходимо скопировать ссылку на сайт, зайти в интернет и
+                    вставить ее в поисковой строке.<br>
+                    2. Вы попадете на Главную страницу сайта. Чтобы зайти в личный кабинет, Вам необходимо в правом
+                    верхнем углу нажать кнопку «личный кабинет».<br>
+                    3. В появившемся окне ввести логин и пароль и нажать OK.<br>
+                    3. В появившемся окне будет написан номер телефона на который необходимо позвонить в течении пяти
+                    минут, чтобы осуществить авторизацию. Звонок бесплатный. После дозвона система сбросит вызов, а Вы
+                    попадете в личный кабинет.<br>
+                    4. У Вас появится договор, с которым необходимо ознакомиться.<br>
+                    5. Все действия по договору можно произвести в личном кабинете.<br>
+                    Если Вам необходимо изменить критерии поиска, то Вам нужно позвонить Вашему ведущему менеджеру или
+                    в службу поддержки клиентов. Все номера телефонов Вы можете уточнить в личном кабинете.
+
+                </div>
+                <div class="tab__panel">
+                    Когда мы обращаемся к специалисту за подбором вариантов заселения, то, в первую очередь, ожидаем,
+                    что заселимся. Именно заселение является конечной целью клиента. Заселение — это сложный процесс,
+                    который состоит из поиска вариантов заселения, которые сдаются от собственника, предварительное
+                    обсуждение условий аренды, назначение просмотра, показ помещения, заключение договора аренды или
+                    коммерческого найма.
+                    На каждом из этапов рынком недвижимости определены препятствия к заселению. Большая часть
+                    предложений являются непривлекательны из-за завышенной стоимости или непрезентабельного состояния
+                    квартиры. Те предложения, которые интересны клиенту, как правило уже сотрудничают с агентствами
+                    недвижимости и частными маклерами. Собственникам недвижимости выгодно сдавать свое жилье через
+                    посредника в связи с функциями отбора, которые выполняет агент. Клиентам выгодно сотрудничать с
+                    агентствами, так как в кратчайшие сроки они получают именно то, что хотят, экономя свое время на
+                    поиск. Агентства недвижимости с выездными агентами взимают большие комиссии, которые составляют не
+                    менее 50% от стоимости квартиры и по особенно выгодным предложениям могут значительно превышать
+                    стоимость квартиры, что не каждый может себе позволить. Так же Вы будете зависеть от рабочего
+                    времени и расписания выездного агента. Нам не известны агентства недвижимости, работающие
+                    круглосуточно, любая задержка на работе или иная ситуация и встреча переносится на неопределенное
+                    время, которое будет одинаково удобно для собственника, агента и Вас.
+
+                </div>
             </div>
-
         </section>
-
         <div class="rect2"></div>
-
     </main>
 
     <!-- FOOTER -->
 
     <footer class="footer container">
-        <div class="footer__copyright">© 2011-2019. Все права защищены.
+        <div class="footer__copyright">© 2011-2019. Все права защищены.<br>
             <a class="footer__policy" href="#policy">Политика конфиденциальности</a></div>
-        <div class="footer__logo">
-            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <div class="footer__logo">
+                    <a href="index.html"></a>
+                </div>
+            <!-- <div class="footer__logo">
+            <a href="index.html"><img src="img/svg/logo-footer.svg" alt="logo"></a>
+        </div> -->
+        <div class="footer__right">
+            <a class="footer__phone" href="#callback">8-800-800-8080</a>
+            <div class="footer__logopay"><img src="img/png/logopay.png"></img></div>
         </div>
-        <div class="footer__phone"><a href="#callback">8-800-800-8080</a></div>
-        <div class="footer__logopay"><img src="img/logopay.png"></img></div>
     </footer>
 
     <!-- FOOTER -->
@@ -903,18 +992,5 @@
 
     <!-- /MODAL -->
 
-    <!-- <link rel="stylesheet" href="libs/animate/animate.min.css" />
-    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
-    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
-    <link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css" />
-    <link rel="stylesheet" href="libs/formstyler/jquery.formstyler.theme.css" />
-
-
-    <script src="libs/jquery/jquery-1.11.1.min.js"></script>
-    <script src="libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
-    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
-    <script src="libs/waypoints/waypoints.min.js"></script>
-    <script src="libs/animate/animate-css.js"></script>
-    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
-    <script src="libs/formstyler/jquery.formstyler.min.js"></script> -->
+    <script src="js/scripts.min.js"></script>
 </body>
