@@ -1000,7 +1000,7 @@ footer {
         position: relative;
         max-width: 100%;
         left: 0%;
-        padding: 100px 10px 0 10px;
+        padding: 50px 10px 0 10px;
     }
 
     .about__table {
@@ -1056,7 +1056,10 @@ footer {
     .banner__button {
         margin: 0 auto;
     }
+.feedback__form {
+    padding: 50px 10px 0 10px;
 
+}
     .feedback__item {
         padding-left: 10px;
         padding-right: 10px;
@@ -1084,9 +1087,14 @@ footer {
         display: none;
     }
 
+    .contract {
+        height: auto;
+    }
+    .contract__title {
+        padding-top: 50px; 
+    }
     .contract__container {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0px 10px 50px 10px;
         margin: 0 auto;
     }
 
@@ -1098,11 +1106,28 @@ footer {
         margin: 0 auto;
     }
 
+    .contacts__title {
+        padding-top: 50px;
+    }
     .contacts__data {
+        padding-top: 0;
         padding-left: 10px;
         padding-right: 10px;
+        font-size: 14px;
     }
-
+    .support {
+        margin-bottom: 30px;
+    }
+    .social {
+        margin-bottom: 30px;
+    }
+    .mail {
+        width: 270px;
+        margin-bottom: 30px;
+    }
+    .time {
+        width: 270px;
+    }
     .footer__logo {
         width: 63px;
         height: 60px;
@@ -1419,11 +1444,8 @@ footer {
 .modal-regions>div {
     background-color: #fff;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.37);
-    text-align: center;
-    font-size: 17px;
-
     max-width: 800px;
-    width: 100%;
+    /* width: 100%; */
     /* max-height: 700px; */
     /* padding: 60px 50px; */
     text-align: left;
@@ -1435,12 +1457,10 @@ footer {
 
 }
 
-
 .modal-regions h3 {
     margin-bottom: 5px;
     color: #7BBE4D;
 }
-
 
 .modal-regions .close {
     float: right;
@@ -1451,9 +1471,8 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    width: 650px;
+    max-width: 650px;
     max-height: 700px;
-
     list-style: none;
 }
 
@@ -1461,6 +1480,14 @@ footer {
     display: block;
     width: 30%;
     margin: 1px;
+}
+
+.modal-regions li a {
+    color: #32343C;
+}
+
+.modal-regions li a:hover {
+    color: #7BBE4D;
 }
 
 .modal-regions .h3-regions {
@@ -1471,15 +1498,42 @@ footer {
     margin-top: 0;
 }
 
+@media (max-width: 849px) {
+    .modal-regions {
+        position: fixed;
+        background: #fff;
+        z-index: 999;
+        display: none;
+        pointer-events: none;
+    }
 
+    .modal-regions>div {
+        box-shadow: none;
+        max-width: 800px;
+        /* width: 100%; */
+        text-align: left;
+        position: relative;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 5px;
+    }
 
+    .modal-regions ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 650px;
+        max-height: 90vh;
+        list-style: none;
+    }
 
-
-
-
-
-
-
+    .modal-regions li {
+        display: block;
+        width: 30%;
+        margin: 1px;
+    }
+}
 
 
 /*  */
