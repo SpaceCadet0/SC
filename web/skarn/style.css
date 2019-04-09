@@ -888,7 +888,8 @@ header {
 /* FOOTER */
 
 footer {
-    height: 150px;
+    padding: 20px;
+    max-height: 150px;
     background-color: #32343C;
     display: flex;
     justify-content: space-around;
@@ -991,9 +992,7 @@ footer {
 
     .info__list {
         max-width: 100%;
-
         padding-right: 10px;
-
     }
 
     .about__container {
@@ -1005,8 +1004,20 @@ footer {
 
     .about__table {
         height: auto;
-        margin: 100px 0 100px 0;
+        margin: 50px 0 50px 0;
         flex-wrap: wrap;
+    }
+
+    .table__first,
+    .table__middle,
+    .table__last {
+        flex-basis: 100%;
+        display: block;
+    }
+
+    .table__middle::before,
+    .table__middle::after {
+        display: none;
     }
 
     .features {
@@ -1039,6 +1050,7 @@ footer {
     }
 
     .banner {
+        background-position-x: 70%;
         min-height: 460px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -1056,10 +1068,12 @@ footer {
     .banner__button {
         margin: 0 auto;
     }
-.feedback__form {
-    padding: 50px 10px 0 10px;
 
-}
+    .feedback__form {
+        padding: 50px 10px 0 10px;
+
+    }
+
     .feedback__item {
         padding-left: 10px;
         padding-right: 10px;
@@ -1081,18 +1095,18 @@ footer {
         margin-bottom: 12px;
     }
 
-
-    .table__middle::before,
-    .table__middle::after {
-        display: none;
+    .partners {
+        padding: 50px 5px 50px 5px;
     }
 
     .contract {
         height: auto;
     }
+
     .contract__title {
-        padding-top: 50px; 
+        padding-top: 50px;
     }
+
     .contract__container {
         padding: 0px 10px 50px 10px;
         margin: 0 auto;
@@ -1109,29 +1123,46 @@ footer {
     .contacts__title {
         padding-top: 50px;
     }
+
     .contacts__data {
         padding-top: 0;
         padding-left: 10px;
         padding-right: 10px;
         font-size: 14px;
     }
+
     .support {
         margin-bottom: 30px;
     }
+
     .social {
         margin-bottom: 30px;
     }
+
     .mail {
         width: 270px;
         margin-bottom: 30px;
     }
+
     .time {
         width: 270px;
     }
+
+    .message__title {
+        padding-top: 50px;
+    }
+
+    .footer {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
     .footer__logo {
+        margin-bottom: 10px;
         width: 63px;
         height: 60px;
         background: url("img/svg/logo--m.svg") no-repeat;
+
     }
 
     .footer__phone {
@@ -1140,6 +1171,12 @@ footer {
 
     .footer__logopay {
         display: none;
+    }
+
+    .footer__copyright {
+        text-align: center;
+        order: 4;
+        flex-basis: 100%;
     }
 }
 
