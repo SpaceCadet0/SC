@@ -504,6 +504,9 @@ header {
     justify-content: space-around;
     text-align: left;
 }
+.hidden {
+    display: none;
+}
 
 .feedback__item {
     max-width: 360px;
@@ -854,6 +857,7 @@ header {
     position: relative;
     padding: 5px 10px;
     color: #C4C4C4;
+    transition-duration: .5s;
 }
 
 .tab__title--active {
@@ -888,7 +892,7 @@ header {
 /* FOOTER */
 
 footer {
-    padding: 20px;
+    padding: 20px 0 20px 0;
     max-height: 150px;
     background-color: #32343C;
     display: flex;
