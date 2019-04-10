@@ -1,4 +1,4 @@
-@import url('fonts/montserrat-500.woff2');
+/* @import url('fonts/montserrat-500.woff2');
 @import url('fonts/montserrat-600.woff2');
 @import url('fonts/montserrat-700.woff2');
 @import url('fonts/montserrat-regular.woff2');
@@ -9,7 +9,7 @@
 @import url('fonts/montserrat-500.ttf');
 @import url('fonts/montserrat-600.ttf');
 @import url('fonts/montserrat-700.ttf');
-@import url('fonts/montserrat-regular.ttf');
+@import url('fonts/montserrat-regular.ttf'); */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Vollkorn');
 @import url('https://fonts.googleapis.com/css?family=Bender');
@@ -445,7 +445,8 @@ header {
     margin-bottom: 60px;
 }
 
-.feedback__button {
+.feedback__button,
+.rent__button {
     display: block;
     margin: 0 auto;
     margin-bottom: 60px;
@@ -504,6 +505,7 @@ header {
     justify-content: space-around;
     text-align: left;
 }
+
 .hidden {
     display: none;
 }
@@ -529,9 +531,9 @@ header {
     align-items: center;
 }
 
-.partners__img {
+/* .partners__img {
     transition-duration: .5s;
-}
+} */
 
 
 .sr {
@@ -678,6 +680,7 @@ header {
     background: url("img/svg/partners/be--.svg") no-repeat center;
 }
 
+
 .sr,
 .yn,
 .irr,
@@ -695,7 +698,8 @@ header {
 .rt,
 .me,
 .mts,
-.be {
+.be
+ {
     display: block;
     width: 110px;
     height: 84px;
@@ -888,6 +892,340 @@ header {
 }
 
 /* /CONTACTS */
+
+/* RENT */
+
+.renta {
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rent__form {
+    padding-top: 200px;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.rent__title {
+
+    margin: 60px;
+}
+
+.rent__button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.form__table {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    .form__table {
+        flex-wrap: wrap;
+    }
+}
+
+.table__col1,
+.table__col2 {
+    min-width: 360px;
+    min-height: 42px;
+    margin-bottom: 12px;
+    padding: 10px;
+    background: #F1F1F1;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+    font-family: Montserrat;
+    font-weight: 500;
+    transition-duration: .5s;
+}
+
+.table__col2 {
+    min-height: 150px;
+    max-width: 360px;
+    margin-bottom: 12px;
+}
+
+.table__col1:focus,
+.table__col2:focus {
+    outline-color: #7BBE4D;
+}
+
+.rent__container {
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: center;
+    padding-left: 0;
+}
+
+.rent__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.rent__item {
+    max-width: 200px;
+    padding-bottom: 20px;
+}
+
+.rent__item1 {
+    background: url('img/svg/dig1.svg') no-repeat;
+}
+
+.rent__item2 {
+    background: url('img/svg/dig2.svg') no-repeat;
+}
+
+.rent__item3 {
+    background: url('img/svg/dig3.svg') no-repeat;
+}
+
+.services {
+    padding: 0 10px 20px 10px;
+    text-align: left;
+}
+
+/* /RENT */
+
+/* PAYMENT */
+
+.payment {
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.payment__form {
+    padding-top: 200px;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.rent__title {
+    margin: 60px;
+}
+
+.payment__phone {
+    color: #7BBE4D;
+}
+
+.contract__field {
+    max-width: 700px;
+    /* ширина нашего блока */
+    max-height: 700px;
+    /* высота нашего блока */
+    background: #fff;
+    /* цвет фона, белый */
+    font-size: 14px;
+    text-align: left;
+    border: 1px solid #C1C1C1;
+    /* размер и цвет границы блока */
+    overflow: auto;
+    /* свойство для прокрутки по горизонтали. Автоматом, если больше блока */
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+.payment__container {
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: center;
+    padding-left: 0;
+}
+
+.payment__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.payment__item {
+    max-width: 220px;
+    padding-bottom: 20px;
+}
+
+.payment__item1 {
+    background: url('img/svg/dig1.svg') no-repeat;
+}
+
+.payment__item2 {
+    background: url('img/svg/dig2.svg') no-repeat;
+}
+
+.payment__item3 {
+    background: url('img/svg/dig3.svg') no-repeat;
+}
+
+
+.payment__logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sb2,
+.ot,
+.al,
+.ra,
+.vtb,
+.tin,
+.kol,
+.bm,
+.psb,
+.per,
+.int,
+.qiw,
+.rob,
+.wal,
+.rbk {
+    display: block;
+    width: 130px;
+    height: 84px;
+    /* transition-duration: .5s; */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+
+.sb2 {
+    background: url("img/svg/payment/sb.svg") no-repeat center;
+}
+
+.sb2:hover {
+    background: url("img/svg/payment/sb--.svg") no-repeat center;
+}
+.ot {
+    background: url("img/svg/payment/ot.svg") no-repeat center;
+}
+
+.ot:hover {
+    background: url("img/svg/payment/ot--.svg") no-repeat center;
+}
+.al {
+    background: url("img/svg/payment/al.svg") no-repeat center;
+}
+
+.al:hover {
+    background: url("img/svg/payment/al--.svg") no-repeat center;
+}
+.ra {
+    background: url("img/svg/payment/ra.svg") no-repeat center;
+}
+
+.ra:hover {
+    background: url("img/svg/payment/ra--.svg") no-repeat center;
+}
+
+.vtb {
+    background: url("img/svg/payment/vtb.svg") no-repeat center;
+}
+
+.vtb:hover {
+    background: url("img/svg/payment/vtb--.svg") no-repeat center;
+}
+
+.tin {
+    background: url("img/svg/payment/tin.svg") no-repeat center;
+}
+
+.tin:hover {
+    background: url("img/svg/payment/tin--.svg") no-repeat center;
+}
+
+.kol {
+    background: url("img/svg/payment/kol.svg") no-repeat center;
+}
+
+.kol:hover {
+    background: url("img/svg/payment/kol--.svg") no-repeat center;
+}
+
+.bm {
+    background: url("img/svg/payment/bm.svg") no-repeat center;
+}
+
+.bm:hover {
+    background: url("img/svg/payment/bm--.svg") no-repeat center;
+}
+
+.psb {
+    background: url("img/svg/payment/psb.svg") no-repeat center;
+}
+
+.psb:hover {
+    background: url("img/svg/payment/psb--.svg") no-repeat center;
+}
+
+.per {
+    background: url("img/svg/payment/per.svg") no-repeat center;
+}
+
+.per:hover {
+    background: url("img/svg/payment/per--.svg") no-repeat center;
+}
+
+.int {
+    background: url("img/svg/payment/int.svg") no-repeat center;
+}
+
+.int:hover {
+    background: url("img/svg/payment/int--.svg") no-repeat center;
+}
+
+.qiw {
+    background: url("img/svg/payment/qiw.svg") no-repeat center;
+}
+
+.qiw:hover {
+    background: url("img/svg/payment/qiw--.svg") no-repeat center;
+}
+
+.rob {
+    background: url("img/svg/payment/rob.svg") no-repeat center;
+}
+
+.rob:hover {
+    background: url("img/svg/payment/rob--.svg") no-repeat center;
+}
+
+.wal {
+    background: url("img/svg/payment/wal.svg") no-repeat center;
+}
+
+.wal:hover {
+    background: url("img/svg/payment/wal--.svg") no-repeat center;
+}
+
+.rbk {
+    background: url("img/svg/payment/rbk.svg") no-repeat center;
+}
+
+.rbk:hover {
+    background: url("img/svg/payment/rbk--.svg") no-repeat center;
+}
+.waranty {
+    padding: 0 10px 20px 10px;
+    text-align: center;
+}
+
+/* /PAYMENT */
+
 
 /* FOOTER */
 
@@ -1475,6 +1813,7 @@ footer {
     transition: opacity 400ms ease-in;
     display: none;
     pointer-events: none;
+
 }
 
 .modal-regions:target {
@@ -1515,6 +1854,7 @@ footer {
     max-width: 650px;
     max-height: 700px;
     list-style: none;
+
 }
 
 .modal-regions li {
