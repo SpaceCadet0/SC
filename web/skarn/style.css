@@ -1178,8 +1178,21 @@ header {
 }
 
 .waranty {
-    padding: 0 10px 20px 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.waranty a {
+    color: #32343C;
+    text-decoration: underline;
+    transition-duration: .5s;
+
+}
+.waranty a:hover {
+color: #7BBE4D;
 }
 /* /PAYMENT */
 
@@ -1885,16 +1898,12 @@ footer {
 
 .modal-personal {
     position: fixed;
-
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.8);
     z-index: 99999;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
     display: none;
     pointer-events: none;
 }
@@ -1903,21 +1912,21 @@ footer {
     display: block;
     pointer-events: auto;
 }
+.personal__title {
+    font-size: 30px;
+}
 
 .modal-personal>div {
     background-color: #fff;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.37);
     text-align: center;
-    font-size: 17px;
 
     max-width: 770px;
-    width: 100%;
-    /* padding: 60px 50px; */
     text-align: left;
     font-size: 15px;
     position: relative;
-    margin: 10% auto;
-    padding: 50px;
+    margin: 5% auto;
+    padding: 40px;
     border-radius: 5px;
 }
 
@@ -1927,6 +1936,7 @@ footer {
 }
 
 .modal-personal p {
+    font-size: 14px;
     margin-top: 20px;
 }
 
@@ -1934,9 +1944,9 @@ footer {
     float: right;
 }
 
-.wrap {
+.personal__wrap {
     overflow: auto;
-    width: 800px;
+    max-width: 800px;
     height: 600px;
     list-style: none;
 }
