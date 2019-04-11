@@ -156,7 +156,7 @@ header {
 }
 
 .menu__toggle {
-    position: absolute;
+    position: relative;
     /* align-self: center; */
     display: block;
     top: 35px;
@@ -531,9 +531,6 @@ header {
     align-items: center;
 }
 
-/* .partners__img {
-    transition-duration: .5s;
-} */
 
 
 .sr {
@@ -680,30 +677,10 @@ header {
     background: url("img/svg/partners/be--.svg") no-repeat center;
 }
 
-
-.sr,
-.yn,
-.irr,
-.rr,
-.nii,
-.hh,
-.sb,
-.skb,
-.pr,
-.tu,
-.rjd,
-.yo,
-.ya,
-.ma,
-.rt,
-.me,
-.mts,
-.be
- {
+.partners__img {
     display: block;
     width: 110px;
     height: 84px;
-    /* transition-duration: .5s; */
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 20px;
@@ -1022,19 +999,15 @@ header {
 
 .contract__field {
     max-width: 700px;
-    /* ширина нашего блока */
     max-height: 700px;
-    /* высота нашего блока */
     background: #fff;
-    /* цвет фона, белый */
     font-size: 14px;
     text-align: left;
     border: 1px solid #C1C1C1;
-    /* размер и цвет границы блока */
     overflow: auto;
-    /* свойство для прокрутки по горизонтали. Автоматом, если больше блока */
     margin: 0 auto;
     margin-bottom: 50px;
+    padding: 10px;
 }
 
 
@@ -1076,56 +1049,32 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding: 0 10px 0 10px;
 }
-
-.sb2,
-.ot,
-.al,
-.ra,
-.vtb,
-.tin,
-.kol,
-.bm,
-.psb,
-.per,
-.int,
-.qiw,
-.rob,
-.wal,
-.rbk {
-    display: block;
-    width: 130px;
-    height: 84px;
-    /* transition-duration: .5s; */
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 20px;
-}
-
 
 .sb2 {
-    background: url("img/svg/payment/sb.svg") no-repeat center;
+    background: url("img/svg/payment/sb.svg");
 }
 
 .sb2:hover {
     background: url("img/svg/payment/sb--.svg") no-repeat center;
 }
 .ot {
-    background: url("img/svg/payment/ot.svg") no-repeat center;
+    background: url("img/svg/payment/ot.svg");
 }
 
 .ot:hover {
     background: url("img/svg/payment/ot--.svg") no-repeat center;
 }
 .al {
-    background: url("img/svg/payment/al.svg") no-repeat center;
+    background: url("img/svg/payment/al.svg");
 }
 
 .al:hover {
     background: url("img/svg/payment/al--.svg") no-repeat center;
 }
 .ra {
-    background: url("img/svg/payment/ra.svg") no-repeat center;
+    background: url("img/svg/payment/ra.svg");
 }
 
 .ra:hover {
@@ -1133,7 +1082,7 @@ header {
 }
 
 .vtb {
-    background: url("img/svg/payment/vtb.svg") no-repeat center;
+    background: url("img/svg/payment/vtb.svg");
 }
 
 .vtb:hover {
@@ -1141,7 +1090,7 @@ header {
 }
 
 .tin {
-    background: url("img/svg/payment/tin.svg") no-repeat center;
+    background: url("img/svg/payment/tin.svg");
 }
 
 .tin:hover {
@@ -1149,7 +1098,7 @@ header {
 }
 
 .kol {
-    background: url("img/svg/payment/kol.svg") no-repeat center;
+    background: url("img/svg/payment/kol.svg");
 }
 
 .kol:hover {
@@ -1157,7 +1106,7 @@ header {
 }
 
 .bm {
-    background: url("img/svg/payment/bm.svg") no-repeat center;
+    background: url("img/svg/payment/bm.svg");
 }
 
 .bm:hover {
@@ -1165,7 +1114,7 @@ header {
 }
 
 .psb {
-    background: url("img/svg/payment/psb.svg") no-repeat center;
+    background: url("img/svg/payment/psb.svg");
 }
 
 .psb:hover {
@@ -1173,7 +1122,7 @@ header {
 }
 
 .per {
-    background: url("img/svg/payment/per.svg") no-repeat center;
+    background: url("img/svg/payment/per.svg");
 }
 
 .per:hover {
@@ -1181,7 +1130,7 @@ header {
 }
 
 .int {
-    background: url("img/svg/payment/int.svg") no-repeat center;
+    background: url("img/svg/payment/int.svg");
 }
 
 .int:hover {
@@ -1189,7 +1138,7 @@ header {
 }
 
 .qiw {
-    background: url("img/svg/payment/qiw.svg") no-repeat center;
+    background: url("img/svg/payment/qiw.svg");
 }
 
 .qiw:hover {
@@ -1197,7 +1146,7 @@ header {
 }
 
 .rob {
-    background: url("img/svg/payment/rob.svg") no-repeat center;
+    background: url("img/svg/payment/rob.svg");
 }
 
 .rob:hover {
@@ -1205,7 +1154,7 @@ header {
 }
 
 .wal {
-    background: url("img/svg/payment/wal.svg") no-repeat center;
+    background: url("img/svg/payment/wal.svg");
 }
 
 .wal:hover {
@@ -1213,17 +1162,25 @@ header {
 }
 
 .rbk {
-    background: url("img/svg/payment/rbk.svg") no-repeat center;
+    background: url("img/svg/payment/rbk.svg");
 }
 
 .rbk:hover {
     background: url("img/svg/payment/rbk--.svg") no-repeat center;
 }
+
+.payment__img {
+    display: block;
+    width: 130px;
+    height: 84px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .waranty {
     padding: 0 10px 20px 10px;
     text-align: center;
 }
-
 /* /PAYMENT */
 
 
@@ -1285,21 +1242,21 @@ footer {
     }
 
     .header__logo {
-        width: 63px;
-        height: 60px;
-        background: url("img/svg/logo--m.svg") no-repeat;
+        width: 120px;
+        height: 50px;
+        background: url("img/svg/logo.svg") no-repeat;
     }
 
     .menu {
         width: 100px;
-        height: 110px;
+        height: 70px;
         min-height: 50px;
     }
 
     .menu__toggle {
+        top: 15px;
         width: 50px;
         background: url("img/svg/menu-m.svg") no-repeat center;
-
     }
 
     .menu__toggle:hover,
@@ -1307,12 +1264,20 @@ footer {
         background: url("img/svg/menu-m--.svg") no-repeat center;
     }
 
+    .menu__wrapper {
+        width: 200px;
+        top: 70px;
+    }
+    .menu__item {
+        margin: 15px;
+    }
+
     .header__user-items {
         right: 10px;
     }
 
     .info {
-        max-height: 700px;
+        max-height: 600px;
     }
 
     .info__container {
@@ -1324,7 +1289,7 @@ footer {
 
     .info__title {
         text-align: center;
-        padding-top: 150px;
+        padding-top: 120px;
 
     }
 
@@ -1493,7 +1458,6 @@ footer {
     .message__title {
         padding-top: 50px;
     }
-
     .footer {
         padding: 10px;
         flex-wrap: wrap;
