@@ -133,7 +133,7 @@ h4 {
 header {
     position: fixed;
     width: 100%;
-    max-height: 110px;
+    max-height: 100px;
     background: #F1F1F1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 10;
@@ -141,7 +141,7 @@ header {
 
 .header__container {
     max-width: 1140px;
-    max-height: 110px;
+    max-height: 100px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -153,7 +153,7 @@ header {
     position: relative;
     left: 0px;
     width: 200px;
-    height: 110px;
+    height: 100px;
     min-height: 50px;
 }
 
@@ -161,7 +161,7 @@ header {
     position: relative;
     /* align-self: center; */
     display: block;
-    top: 35px;
+    top: 30px;
     width: 250px;
     height: 40px;
     background: url("img/svg/menu.svg") no-repeat center;
@@ -199,7 +199,7 @@ header {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 110px;
+    top: 100px;
     z-index: -2;
     background: #F1F1F1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -233,9 +233,9 @@ header {
 
 .header__logo {
     align-self: center;
-    width: 190px;
-    height: 79px;
-    background: url("img/svg/logo.svg");
+    width: 180px;
+    height: 70px;
+    background: url("img/svg/logo.svg") no-repeat;
 }
 
 .header__user-items {
@@ -246,7 +246,7 @@ header {
 
 .header__phone a {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     color: #32343C;
     transition-duration: .5s;
@@ -275,7 +275,7 @@ header {
 .info__title {
     position: relative;
     display: block;
-    padding-top: 210px;
+    padding-top: 200px;
 }
 
 .info__container {
@@ -1254,6 +1254,83 @@ color: #7BBE4D;
 }
 /* /PAYMENT */
 
+/* ACCOUNT */
+.account {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+}
+.tabs__container {
+    top: 110px;
+    width: 100px;
+}
+.account__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+.account__item {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-bottom: 2px solid #C4C4C4;
+    border-right: 2px solid #C4C4C4;
+    font-size: 10px;
+    color: #C4C4C4;
+    text-align: center;
+    padding: 10px;
+}
+.account__item--active {
+    color: #32343C;
+}
+.account__contract {
+    background: url("img/svg/account/contract.svg") no-repeat center/50%;
+}
+.account__payment {
+    background: url("img/svg/account/payment.svg") no-repeat center/50%;
+}
+.account__contractoffer {
+    background: url("img/svg/account/contractoffer.svg") no-repeat center/40%;
+}
+.account__rules {
+    background: url("img/svg/account/rules.svg") no-repeat center/40%;
+}
+.account__security {
+    background: url("img/svg/account/security.svg") no-repeat center/40%;
+}
+.account__personal {
+    background: url("img/svg/account/personal.svg") no-repeat center/40%;
+}
+.account__chat {
+    background: url("img/svg/account/chat.svg") no-repeat center/50%;
+}
+.account__contract:hover {
+    background: url("img/svg/account/contract--.svg") no-repeat center/50%;
+}
+.account__payment:hover {
+    background: url("img/svg/account/payment--.svg") no-repeat center/50%;
+}
+.account__contractoffer:hover {
+    background: url("img/svg/account/contractoffer--.svg") no-repeat center/40%;
+}
+.account__rules:hover {
+    background: url("img/svg/account/rules--.svg") no-repeat center/40%;
+}
+.account__security:hover {
+    background: url("img/svg/account/security--.svg") no-repeat center/40%;
+}
+.account__personal:hover {
+    background: url("img/svg/account/personal--.svg") no-repeat center/40%;
+}
+.account__chat:hover {
+    background: url("img/svg/account/chat--.svg") no-repeat center/50%;
+}
+.account__panel {
+    padding: 20px;
+}
+/* /ACCOUNT */
+
 
 /* FOOTER */
 
@@ -1342,7 +1419,6 @@ footer {
 
 
 /* POPUP */
-
 
 
 .modal-callback {
@@ -1445,25 +1521,18 @@ footer {
 
     color: #FFFFFF;
     cursor: pointer;
-
 }
-
 
 /*  */
 
-
 .modal-login {
     position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.8);
     z-index: 99999;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
     display: none;
     pointer-events: none;
 }
@@ -1475,14 +1544,12 @@ footer {
 
 .modal-login>div {
     width: 400px;
-    min-width: 280px;
     padding: 40px 25px;
     background-color: #fff;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.37);
     text-align: center;
-
     position: relative;
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 20px;
     border-radius: 5px;
 }
@@ -1492,11 +1559,9 @@ footer {
 }
 
 .modal-login h2 {
-    font-family: Vollkorn;
     font-size: 30px;
     margin: 30px;
 }
-
 
 .modal-login .password,
 .modal-login .phone {
@@ -1512,28 +1577,13 @@ footer {
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
-
 }
-
-
-.modal-login .btn {
-    /* clear: both; */
-    height: 60px;
-    width: 275px;
-    background: #7BBE4D;
-    border: none;
-    border-radius: 5px;
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
+.modal-login .button {
     margin: 0 auto;
-    margin-bottom: 15px;
-
-
-    color: #FFFFFF;
-    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 
 /*  */
 
@@ -2072,5 +2122,8 @@ footer {
     }
     .modal-personal>div {
         padding: 10px;
+    }
+    .modal-login>div {
+        max-width: 280px;
     }
 }
